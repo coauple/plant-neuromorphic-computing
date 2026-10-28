@@ -4,7 +4,7 @@ Tarih: 2026-10-15. Kapsam: Aşama 0–9. Kriterler: `TEST_PLAN.md` (kör, dondur
 Komut: `bash bench/run_all.sh` (tahmini süre ~2 saat; her aşama tek tek koşuldu,
 regresyonlar geçti; temiz-sıfırdan tam koşu bu oturumda yapılmadı — bkz. Sınırlar).
 
-Atıf (gerçek veri): DesRosiers vd., "A library of electrophysiological
+Atıf (gerçek veri): Madariaga vd., "A library of electrophysiological
 responses in plants", figshare DOI 10.6084/m9.figshare.25425920.v2, CC BY 4.0.
 
 ## Yönetici özeti — en önemli 5 bulgu (olduğu gibi)
@@ -28,7 +28,7 @@ responses in plants", figshare DOI 10.6084/m9.figshare.25425920.v2, CC BY 4.0.
    yakalamasını bozuyor). Yarı-AUC noktası ızgara-dışında (çökme yok).
 5. **Gerçek veride kimse ayrıştıramadı.** 36 Ocimum kaydında havuzlanmış AUC:
    S 0.493, varyans 0.455, HF-enerji 0.412 (n=483 pencere). Zayıf-etiket payı
-   büyük (literatür: ~%60 yanıt + 3–6 sn gecikme). Bu bir çekirdek-hükmü değil,
+   büyük (Madariaga vd. 2024: bitkilerin ~%60'ı yanıt verir, kayıtların ~%30'unda yanıt saptanır, gecikme ~3–6 sn). Bu bir çekirdek-hükmü değil,
    bir ölçüm-sınırı kaydıdır.
 
 ## Aşama sonuçları (kriter karşılıkları)
