@@ -3,6 +3,10 @@
 `[DOGRULANDI]` = 28 Eki 2026'da bu paketin kaynaklarından gerçekten koşuldu;
 `[DOGRULANMADI]` = bu makinede denenemedi. Paket kökü: klonlanan dizin.
 
+## Hızlı yol
+
+Köke gidip `bash run_review.sh` çalıştırın (~2 sn; geçici kopyada çalışır, depoyu bozmaz). Aşağıdaki adımlar aynı işin elle, ayrıntılı halidir.
+
 ## 0. Güvenli çalışma (önce bunu yapın)
 
 Deneyler çıktıları çalışılan dizine yazar; kayıtlı sonuçların üzerine yazmamak
