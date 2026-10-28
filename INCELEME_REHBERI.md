@@ -101,7 +101,7 @@ yanında koşmayın — §5'teki güvenli yöntemi kullanın.
   tavanda durması ve öğrenilmiş ağırlığın akım taşıması.
 - Sınırlar: `S` yalnız ağırlık tavanıdır, zaman/eskime terimi yok (tasarım
   kararı, `CLAUDE.md` §9.1). Kayıtlı Eylül sayılarıyla birebir aynı değil
-  (taze derlemede T2=79, kayıtta 78); bkz. `YENIDEN_URETIM_KONTROLU.md` §2.
+  (taze derlemede T2=79, kayıtta 78).
 
 ### Deney C — Örüntü lobu (afferent → örüntü birimleri)
 
@@ -135,6 +135,6 @@ komutları belgede yazdığı gibidir ancak bu denetimde **koşulmadı**.
 
 ## 6. İlk turda okunacaklar (öncelik sırası)
 
-1. `README.md` → 2. `YENIDEN_URETIM_KONTROLU.md` §5–7 (ne üretildi, ne üretilemedi)
-   → 3. `salep_core/CONTRACT_EVIDENCE.md` (B1–B11) → 4. `salep_core/bench/REPORT.md`
-   yönetici özeti → 5. `salep_core/ARCHITECTURE.md`.
+1. `README.md` (doğruluk durumu) → 2. `salep_core/CONTRACT_EVIDENCE.md` (B1–B11)
+   → 3. `salep_core/bench/REPORT.md`
+   yönetici özeti → 4. `salep_core/ARCHITECTURE.md`.

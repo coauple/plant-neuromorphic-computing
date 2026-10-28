@@ -64,10 +64,9 @@ beklenmedik sonuçlar yumuşatılmadan raporlandı (bkz. `bench/REPORT.md`).*
 - [QUICKSTART.md](QUICKSTART.md) — sıfırdan kurulum ve ilk deney
 - [EXPERIMENT_GALLERY.md](EXPERIMENT_GALLERY.md) — deney galerisi
 - [RESEARCH_HISTORY.md](RESEARCH_HISTORY.md) — araştırma geçmişi
-- [ARCHITECTURE.md](salep_core/ARCHITECTURE.md) — mimari ve tasarım kısıtları
+- [CLAUDE.md](salep_core/CLAUDE.md) — mimari ve tasarım kısıtları
 - [CONTRACT_EVIDENCE.md](salep_core/CONTRACT_EVIDENCE.md) — iddia/kanıt tablosu
 - [bench/REPORT.md](salep_core/bench/REPORT.md) — bağımsız değerlendirme
-- [YENIDEN_URETIM_KONTROLU.md](YENIDEN_URETIM_KONTROLU.md) — yeniden-üretim denetimi
 
 ---
 
@@ -129,7 +128,7 @@ g++ -std=c++17 -O2 -Isrc src/main_plant_npu.cpp -o npu_plant_npu  # + diğer mai
 - **Tam üretim:** örüntü `mem/log`, `neuron_trace.csv` (bit-bit aynı).
 - **Kısmi:** bitki NPU özet 4/4 OK, CSV bit-farklı.
 - **Üretilemeyen:** duyusal lob `A=OK` → taze derlemede `A=UYARI`.
-- Ayrıntı: [YENIDEN_URETIM_KONTROLU.md](YENIDEN_URETIM_KONTROLU.md).
+- Ayrıntı: deney komutları ve taze-derleme sonuçları için [INCELEME_REHBERI.md](INCELEME_REHBERI.md) §4.
 
 ## Dışarıda bırakılanlar
 
