@@ -1,0 +1,26 @@
+# Python ortamı ve önbellek (yeniden kurulur/üretilir)
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Derlenmiş C++ programları (salep_core köküne derlenir, kaynaklar durur)
+# NOT: sim/npu_bridge.py gibi kaynaklar etkilenmez (yalnız kök dizin).
+salep_core/npu_*
+salep_core/bench/build/
+*.o
+*.a
+
+# Çalışma çıktıları (kayıtlı referans CSV/PNG'ler takip edilir, bunlar hariç)
+/tmp/
+*.log
+*.tmp
+*~
+.DS_Store
+
+# Olası gizli bilgiler (asla commitlenmez)
+.env
+*.pem
+*.key
+*_token*
+*_secret*

@@ -1,0 +1,16 @@
+=== Dallanma Testi: 3 Senaryo ===
+
+  Senaryo 1: 6 ateşleme, ilk ateşleme tick=67 → branch_s1.csv
+  Senaryo 2: 7 ateşleme, ilk ateşleme tick=65 → branch_s2.csv
+  Senaryo 3: 12 ateşleme, ilk ateşleme tick=56 → branch_s3.csv
+
+╔══════════════════════╦══════════════╦════════════════════╗
+║ Senaryo              ║ Ateşleme     ║ İlk ateşleme tick  ║
+╠══════════════════════╬══════════════╬════════════════════╣
+║ 1: Sadece Dal A      ║    6         ║   67               ║
+║ 2: Sadece Dal B      ║    7         ║   65               ║
+║ 3: İkisi birden      ║   12         ║   56               ║
+╚══════════════════════╩══════════════╩════════════════════╝
+
+✓ Beklenen sonuç DOĞRULANDI: Senaryo 3 (eşzamanlı) daha fazla ateşleme üretiyor.
+✓ Beklenen sonuç DOĞRULANDI: Senaryo 3 daha erken ateşliyor (tick 56 vs 67 / 65).

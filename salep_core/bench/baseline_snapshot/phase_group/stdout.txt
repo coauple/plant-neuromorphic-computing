@@ -1,0 +1,35 @@
+=== FAZ GRUBU: 4x ISI-tau demux + capraz-bant birlestirici ===
+tau={4,8,12,16} bw=2 pulse=0.8, 40 dongu x 500 tick
+CSV yazildi: phase_group_learning.csv
+
+=== (A) DEMUX SECICILIK (satir=noron, sutun=faz) ===
+        faz0  faz1  faz2  faz3   own%  rakip_oran
+P0(t= 4)   240     0     0     0  100.0%  999.00x
+P1(t= 8)     0   120     0     0  100.0%  999.00x
+P2(t=12)     0     0    80     0  100.0%  999.00x
+P3(t=16)     1     0     0    80   98.8%   80.00x
+OK (A): her noron ateslerinin >=%50'si kendi fazinda ve >=2x rakip
+
+=== (B) BANT-DISI SONUM ===
+P0: en kotu yabanci=0 hedef=240 sizinti=0.0%
+P1: en kotu yabanci=0 hedef=120 sizinti=0.0%
+P2: en kotu yabanci=0 hedef=80 sizinti=0.0%
+P3: en kotu yabanci=1 hedef=80 sizinti=1.2%
+OK (B): en kotu yabanci faz <= hedef fazin %25'i
+
+=== (C) SINAPTIK OGRENME ===
+syn[0]: 1.500 -> 1.999786 (buyume +0.499786) monoton=evet
+syn[1]: 1.500 -> 1.763794 (buyume +0.263794) monoton=evet
+syn[2]: 1.500 -> 0.663208 (buyume -0.836792) monoton=HAYIR
+syn[3]: 1.500 -> 1.539581 (buyume +0.039581) monoton=evet
+UYARI (C): 4 sinaps monoton buyuyor (seyrek rejim: yavas bantlar
+   cok yavas buyur; kuadratik kuralin hiz-oran bagimliliginin
+   dogal sonucu, kural bozuk degil)
+
+=== (D) BIRLESTIRICI (post, yalniz sinaptik) ===
+post toplam ates: 240
+faz dagilimi: 120 79 1 40
+erken(0-4): 30 gec(35-39): 30
+OK (D): post atesliyor
+
+=== OZET: A=OK B=OK C=UYARI D=OK ===

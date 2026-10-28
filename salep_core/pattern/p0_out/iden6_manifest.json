@@ -1,0 +1,27 @@
+{
+ "sha256": "82e3c89fb3c3d7f5bfd54226e1c669499874454c05d8e3fdf2f41d6c3380faf3",
+ "manifest": {
+  "phis": [
+   60,
+   150,
+   240
+  ],
+  "amps": [
+   1.0,
+   4.0
+  ],
+  "onsets": [
+   50,
+   70
+  ],
+  "confs": [
+   "K1+K2",
+   "K1+K2+K3"
+  ],
+  "train": {
+   "n_pulse": 5,
+   "isi": 12,
+   "horizon": 200
+  }
+ }
+}

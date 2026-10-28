@@ -1,0 +1,19 @@
+# Salep Sibernetiği — Python bağımlılıkları (YENİDEN ÜRETİM, 2026-10-28)
+# Kullanım (proje kökünde, salep_core/ dizininde):
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r requirements.txt
+#
+# Sürümler, çalışan .venv'in pip freeze çıktısından sabitlendi (Python 3.10).
+# Kapsam: simülatör (sim/), web sunucusu (web/), testler (validate_*.py),
+# grafikler (plot_*.py), terminal paneli (live_term.py), bench betikleri.
+# NOT: node.js (web/g24_parity.mjs için) pip ile kurulmaz, ayrıca gerekir.
+# NOT: streamlit/requests/Pillow/PySide6 .venv'de kurulu ama hiçbir .py
+# dosyası bunları import etmiyor (artık); listeye alınmadı.
+
+numpy==2.2.6          # sim/, validate_*, bench (sayısal hesap)
+pandas==2.3.3         # sim/selftest, plant_sim (tablo veri)
+matplotlib==3.10.9    # plot_*.py, sim/selftest, bench şekilleri
+starlette==1.6.0      # web/server.py (web çatısı)
+uvicorn==0.52.4       # web/server.py (web çalıştırıcı)
+websockets==16.1.1    # web/gates_web.py (kapı testleri)
+rich==15.0.0          # live_term.py (terminal paneli)

@@ -1,0 +1,13 @@
+=== AFFERENT demo: P2 olaylari -> nedensellik ===
+X(post0,T12) + Y=X+8(post1); F1 X, F2 Y, F3 X+Y; 3 super x 1000 tick
+UYARI (A): F3=132 >= 2x(F1=40+F2=70), C=[0 0 915]
+OK (B): F3 kazanc > tekil (s0: 0.8412>0.7544, s2: 0.8677>0.0034)
+OK (D): F3 toplam > F1+F2 (1.7090)
+OK (C): P1/P3 ates=0, w1/w3 donuk
+OK (E): kablo denetimi F3 ciftli 132/132 (1.00)
+OK (F): adaptor tasma=0, kapanis bekleyen=0; olaylar X/Y=[226+0 0+219 225+225]
+OK (P1): F3 recall 210/225 (0.933)
+OK (P2): F1 pencere=110, Y=0 (bos-dunya gozlemi)
+OK (P3): F3 lead=8.10 tick (pencere 16)
+
+=== OZET-AFFERENT: A=UYARI B=OK C=OK D=OK E=OK F=OK P=OK ===

@@ -1,0 +1,11 @@
+sizeof fixed_t=4
+sizeof Compartment=36
+sizeof DendriticNeuron=516
+sizeof Synapse=24
+sizeof FdmNetwork=21700
+sizeof SensoryLobe=48848
+sizeof CausalityNetwork=3000
+sizeof Predictor=64
+sizeof BurstAdapter=144
+LUT G=3844 Q=3844 S=260 bayt
+minmax V=[-0.2000,0.9781] gating=[0.0000,36.0528] soma=[-1.3083,1.0000] ntick=16800

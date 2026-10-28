@@ -1,0 +1,39 @@
+{
+ "gates": {
+  "K0a": true,
+  "K0a2": true,
+  "K0b": true,
+  "K0c": true,
+  "K0d": true,
+  "K0f": true,
+  "K0e": true
+ },
+ "frozen_sha12": {
+  "src/pattern_lobe.h": "a8307fc384c2",
+  "src/pattern_unit_v2.h": "776388062ed7",
+  "pattern/pl_core.py": "3c4d0efc065f",
+  "pattern/P0_SPEC.md": "720da523b9e6",
+  "pattern/P0B_SPEC.md": "579beeb70944",
+  "pattern/P0C_SPEC.md": "77b43c0e3c15",
+  "pattern/T_AMP_SPEC.md": "062f6344d895",
+  "pattern/IDEN_SPEC.md": "a971a10940de"
+ },
+ "k0d_detail": [
+  [
+   40,
+   0,
+   9,
+   12,
+   6,
+   6
+  ],
+  [
+   40,
+   0,
+   9,
+   12,
+   5,
+   5
+  ]
+ ]
+}

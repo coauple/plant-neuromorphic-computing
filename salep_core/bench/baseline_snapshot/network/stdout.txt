@@ -1,0 +1,60 @@
+
+=== BOLUM 0: BOOTSTRAP DEADLOCK DEMO (w=0.05, 3 dongu, CSV yok) ===
+N3 ates sayisi (1500 tick): 0
+syn[0] weight: 0.049988 -> 0.049988
+syn[1] weight: 0.049988 -> 0.049988
+syn[2] weight: 0.049988 -> 0.049988
+OK DOGRULANDI: N3 deadlock durumunda hic atesenmedi (dusuk w -> yetersiz akim).
+
+=== ANA KOSU: w0=0.3, 20 dongu x 500 tick = 10000 tick ===
+
+Toplam N0 ates: 240
+Toplam N1 ates: 289
+Toplam N2 ates: 299
+Toplam N3 ates: 275
+CSV yazildi: network_learning.csv
+
+=== (a) BAGIMSIZ OGRENME - 3 SINAPS MONOTONLUK ===
+syn[0] dongu sonu agirliklar: baslangic=0.300 dongu0=1.534 dongu19=2.000
+syn[1] dongu sonu agirliklar: baslangic=0.300 dongu0=1.537 dongu19=2.000
+syn[2] dongu sonu agirliklar: baslangic=0.300 dongu0=1.527 dongu19=2.000
+OK DOGRULANDI: Uc sinaps da monoton artan, tavana ulasiyor.
+
+=== (b) N3 DAVRANISI DEGISIYOR MU: ERKEN VS GEC ===
+Dongu  0: 3 ates
+Dongu  1: 14 ates
+Dongu  2: 15 ates
+Dongu  3: 14 ates
+Dongu  4: 14 ates
+Dongu  5: 15 ates
+Dongu  6: 14 ates
+Dongu  7: 14 ates
+Dongu  8: 14 ates
+Dongu  9: 14 ates
+Dongu 10: 15 ates
+Dongu 11: 15 ates
+Dongu 12: 14 ates
+Dongu 13: 14 ates
+Dongu 14: 14 ates
+Dongu 15: 14 ates
+Dongu 16: 15 ates
+Dongu 17: 15 ates
+Dongu 18: 14 ates
+Dongu 19: 14 ates
+Erken pencere (dongu 0-4) toplam: 60
+Gec pencere (dongu 15-19) toplam: 72
+Oran (gec/erken): 1.20x
+UYARI: N3 ates hizi erken->gec artisi beklenenden dusuk (1.20x).
+
+=== (c) DAL A MULTIPLEX ANALIZI ===
+Sadece N0: 188 tick
+Sadece N1: 237 tick
+N0+N1 birlikte: 52 tick
+Hicbiri: 9523 tick
+Sadece N1 atesi -> N3 ates: 75/237 (31.6%)
+N0+N1 birlikte -> N3 ates: 32/52 (61.5%)
+Multiplex amplifikasyon: 1.94x
+OK DOGRULANDI: Dal A, N0+N1 coincidence ile amplifikasyon gosteriyor.
+
+=== OZET ===
+UYARI: Bazi dogrulmalar basarisiz veya beklenen esigin altinda.

@@ -1,0 +1,16 @@
+run,day,event,detail
+RUN1,2,scheduled,['fert']
+RUN1,5,scheduled,['rain_extra']
+RUN1,6,scheduled,['rain_extra']
+RUN1,8,scheduled,['temp_delta']
+RUN1,9,scheduled,['temp_delta']
+RUN2,2,scheduled,['fert']
+RUN2,8,scheduled,['temp_delta']
+RUN2,9,scheduled,['temp_delta']
+RUN3,2,scheduled,['fert']
+RUN4,2,scheduled,['fert']
+RUN4,5,scheduled,"['drain_mult', 'rain_extra']"
+RUN4,6,scheduled,"['drain_mult', 'rain_extra']"
+RUN4,7,scheduled,['drain_mult']
+RUN4,8,scheduled,['drain_mult']
+RUN4,9,scheduled,['drain_mult']

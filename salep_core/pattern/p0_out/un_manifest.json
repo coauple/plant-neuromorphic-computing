@@ -1,0 +1,38 @@
+{
+ "sha256": "864a06c86bd5abcb65bb648cd81250cd85681f6986ace32cfc46e8e579683511",
+ "manifest": {
+  "conds": [
+   "K1",
+   "K2",
+   "K3",
+   "JOINT"
+  ],
+  "dal_map": {
+   "A": "K3",
+   "B": [
+    "K1",
+    "K2"
+   ]
+  },
+  "k": 0.5,
+  "r": 0.05,
+  "weights": "upl_weights.json",
+  "episodes": [
+   [
+    5,
+    6,
+    0
+   ],
+   [
+    5,
+    6,
+    17
+   ],
+   [
+    4,
+    5,
+    9
+   ]
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "HUKUM": {
+  "R1": "feedforward-secer",
+  "R2": "A-treni+bonus-suclu",
+  "R3": "B-tek-basina-yeter"
+ },
+ "M1": true,
+ "R1_WTA_role": "feedforward-secer",
+ "R2_A_dominance": "A-treni+bonus-suclu",
+ "R3_B_sufficiency": "B-tek-basina-yeter",
+ "winners": {
+  "INH0.0-AB-150@1.0": 5,
+  "INH0.0-AB-150@4.0": 4,
+  "INH0.0-AB-60@1.0": 2,
+  "INH0.0-AB-60@4.0": 4,
+  "INH0.0-AB-90@1.0": 3,
+  "INH0.0-AB-90@4.0": 4,
+  "INH0.0-B-150@1.0": 5,
+  "INH0.0-B-150@4.0": 5,
+  "INH0.0-B-60@1.0": 2,
+  "INH0.0-B-60@4.0": 2,
+  "INH0.0-B-90@1.0": 3,
+  "INH0.0-B-90@4.0": 3,
+  "INH1.0-AB-150@1.0": 5,
+  "INH1.0-AB-150@4.0": 4,
+  "INH1.0-AB-60@1.0": 2,
+  "INH1.0-AB-60@4.0": 2,
+  "INH1.0-AB-90@1.0": 3,
+  "INH1.0-AB-90@4.0": 4,
+  "INH1.0-B-150@1.0": 5,
+  "INH1.0-B-150@4.0": 5,
+  "INH1.0-B-60@1.0": 2,
+  "INH1.0-B-60@4.0": 2,
+  "INH1.0-B-90@1.0": 3,
+  "INH1.0-B-90@4.0": 3
+ },
+ "zero_link": []
+}

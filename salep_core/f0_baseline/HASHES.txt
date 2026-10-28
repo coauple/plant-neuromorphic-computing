@@ -1,0 +1,2 @@
+19a4db55674979976e6f8ddbe1d36a1b  pattern_testb_mem.csv
+da01ed76cbee2dc87bc52d8f10bcc82c  pattern_testb_log.csv

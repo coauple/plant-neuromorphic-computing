@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistem Denetimi — Görsel Sunum (2026-10-14)</title>
+<style>
+:root{--bg:#0f1420;--card:#1a2233;--line:#334155;--txt:#e2e8f0;--mut:#94a3b8;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444;--info:#38bdf8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.55 system-ui,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:1060px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:24px;margin:0 0 4px}h2{font-size:18px;margin:30px 0 10px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.sub{color:var(--mut);margin:0 0 16px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.kpi{font-size:26px;font-weight:700}.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}.mut{color:var(--mut)}.small{font-size:13px}
+svg{width:100%;height:auto;display:block}code{background:#0b1220;padding:1px 6px;border-radius:6px;font-size:13px}
+ul{margin:8px 0;padding-left:20px}li{margin:4px 0}
+.badge{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:700}
+.b-ok{background:#14532d;color:#bbf7d0}.b-warn{background:#451a03;color:#fed7aa}.b-bad{background:#450a0a;color:#fecaca}.b-info{background:#0c4a6e;color:#bae6fd}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;margin-top:8px}
+.node{flex:1 1 130px;background:#0b1220;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center;min-width:130px}
+.node b{display:block;font-size:13px}.node span{font-size:12px;color:var(--mut)}
+.arrow{align-self:center;color:var(--mut);font-weight:700}
+.bar{height:10px;background:#0b1220;border-radius:6px;overflow:hidden;margin-top:6px}.bar i{display:block;height:100%}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line)}th{color:var(--mut)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Sistem Denetimi — Görsel Sunum</h1>
+<p class="sub">2026-10-14 · salt-okunur denetim · kod/test değiştirilmedi · ayrıntı: <code>DENETIM_RAPORU_2026-10-14.md</code></p>
+
+<h2>1. Zincir (simülatör → çıkarım)</h2>
+<div class="card">
+<div class="flow">
+<div class="node"><b>Fizik</b><span>plant_sim<br>seed 1 · 250 gün</span></div><div class="arrow">→</div>
+<div class="node"><b>Sensör</b><span>sensor_map<br>7 kanal</span></div><div class="arrow">→</div>
+<div class="node"><b>Elektro</b><span>electro<br>1981 darbe</span></div><div class="arrow">→</div>
+<div class="node"><b>P1 · PLIR-A</b><span>303 ateş<br>%15.3 capture</span></div><div class="arrow">→</div>
+<div class="node"><b>P2 · B</b><span>300 olay<br>291 B'li</span></div><div class="arrow">→</div>
+<div class="node"><b>Assoc</b><span>163/165<br>banka etiketi</span></div><div class="arrow">→</div>
+<div class="node"><b>Çıkarım</b><span>97/175<br>dünya etiketi</span></div><div class="arrow">→</div>
+<div class="node"><b>Örüntü</b><span>determinizm<br>doğruluk yok</span></div>
+</div>
+<p class="small mut">Etiketler: dünya etiketi NPU'ya girmez · banka etiketi temsilden türetilir (döngüsel) · koşul etiketi ateş kümesinden yazılır.</p>
+</div>
+
+<h2>2. Skorlar (ne ölçüyor?)</h2>
+<div class="grid">
+<div class="card"><span class="badge b-info">ASSOC · banka tutarlılığı</span><div class="kpi">163/165 <span class="mut" style="font-size:15px">%98.8</span></div><div class="small">true 105/106 · mixed 54/55 · decoy 4/4<br>2 hata zıt yönlü (137, 172). Aynı kablo LOO.</div></div>
+<div class="card"><span class="badge b-warn">ÇIKARIM · dünya koşulu</span><div class="kpi">97/175 <span class="mut" style="font-size:15px">0.554</span></div><div class="small">kurak→normal 28/28 (%100 emilme)<br>k=3 · aynı yörünge · örtüşmesiz pencere.</div></div>
+<div class="card"><span class="badge b-bad">QUADRATIC · öğrenme</span><div class="kpi">70/175 <span class="mut" style="font-size:15px">0.400</span></div><div class="small">Baseline'ı geçemedi (0.554).<br>5 tohumda sabit → sabit nokta.</div></div>
+<div class="card"><span class="badge b-bad">CR · test fazı</span><div class="kpi">0 olay <span class="mut" style="font-size:15px">30 gün sessiz</span></div><div class="small">B5_CR_YOK. Kapalı çevrime geçilmez.<br>Sessiz 85 gün assoc skoru dışında.</div></div>
+</div>
+
+<h2>3. Kayıp hunisi (ölçülen)</h2>
+<div class="card">
+<svg viewBox="0 0 640 210" role="img" aria-label="kayıp hunisi">
+<text x="8" y="24" fill="#e2e8f0" font-size="13">bitki 1981</text><rect x="130" y="10" width="480" height="18" rx="4" fill="#38bdf8"/>
+<text x="8" y="58" fill="#e2e8f0" font-size="13">P1 303 (%15.3)</text><rect x="130" y="44" width="74" height="18" rx="4" fill="#f59e0b"/>
+<text x="8" y="92" fill="#e2e8f0" font-size="13">P2 300 olay</text><rect x="130" y="78" width="73" height="18" rx="4" fill="#f59e0b"/>
+<text x="8" y="126" fill="#e2e8f0" font-size="13">A'lı 103 / B'li 291</text><rect x="130" y="112" width="71" height="18" rx="4" fill="#ef4444"/><rect x="130" y="112" width="25" height="18" rx="4" fill="#22c55e"/>
+<text x="8" y="160" fill="#e2e8f0" font-size="13">test fazı 0</text><rect x="130" y="146" width="2" height="18" rx="4" fill="#ef4444"/>
+<text x="8" y="194" fill="#94a3b8" font-size="12">yeşil=A-geçmişli · kırmızı=B-baskın · kalıcılık donanımı bit-eşit (katılmıyor)</text>
+</svg>
+</div>
+
+<h2>4. Bağımsızlık ve sızma</h2>
+<div class="card">
+<table>
+<tr><th>Soru</th><th>Bulgu</th><th>Durum</th></tr>
+<tr><td>Eğitim/test bağımsız koşu mu?</td><td>Hayır — tek yörünge, LOO aynı kablodan</td><td><span class="badge b-bad">YOK</span></td></tr>
+<tr><td>Dünya etiketi NPU'ya sızıyor mu?</td><td>Hayır — yalnız skorda</td><td><span class="badge b-ok">TEMİZ</span></td></tr>
+<tr><td>Banka etiketi döngüsel mi?</td><td>Evet — posts'tan türetilip posts ile test</td><td><span class="badge b-warn">DÖNGÜSEL</span></td></tr>
+<tr><td>Tek senaryo/seed mi?</td><td>Evet — MASTER=1, sabit STAGES</td><td><span class="badge b-warn">EZBER RİSKİ</span></td></tr>
+<tr><td>Uçtan uca bağımsız test?</td><td>Yok — tesisat/determinizm testleri var</td><td><span class="badge b-bad">YOK</span></td></tr>
+</table>
+</div>
+
+<h2>5. Gerçek / sentetik / bilinmeyen</h2>
+<div class="grid">
+<div class="card"><span class="badge b-ok">GERÇEK</span><ul class="small"><li>Aydın Open-Meteo hava (366 gün)</li><li>Determinizm / bit-eşitlik kapıları</li><li>Not: TEST B sentetik iklim kullanır</li></ul></div>
+<div class="card"><span class="badge b-info">SENTETİK</span><ul class="small"><li>Bitki fizyolojisi + hn/ph/npk türetme</li><li>Elektro spike'ları (taklit)</li><li>Tüm NPU skorları (163/165, 0.554…)</li></ul></div>
+<div class="card"><span class="badge b-bad">BİLİNMEYEN</span><ul class="small"><li>Gerçek bitki elektrot kaydı: yok</li><li>Farklı seed/senaryoda skor: yok</li><li>Kapalı çevrim + tarla kalibrasyonu</li></ul></div>
+</div>
+
+<h2>6. Deney öncesi hüküm</h2>
+<div class="card">
+<ul>
+<li><b>Ölçülen:</b> mekanizmalar çalışıyor (kilit, amplifikasyon, B-sürüş), temsil dünya bilgisi taşıyor (0.554 &gt; 0.446 rate).</li>
+<li><b>Kırık:</b> seyrek kalıcılık yok (FDM bit-eşit), CR yok, kuraklık ayrışmıyor (28/28 emilme).</li>
+<li><b>Eksik:</b> bağımsız koşu, senaryo-dışı genelleme, gerçek bitki verisi.</li>
+<li><b>Öneri:</b> 5 tohum × kaydırılmış senaryo, ön-kayıtlı metrik, sessiz-gün dahil skor. Tarla iddiası yok.</li>
+</ul>
+<p class="small mut">Kanıt dosyaları: sim/assoc.py · validate_assoc.py · validate_inference.py · validate_fdm_sweep.py · validate_aonly.py · validate_testb.py · sim/sensory_chain.py · src/main_sensory_plant.cpp · src/sensory_lobe.h · testb_*.csv · V1_BASELINE.md</p>
+</div>
+</div>
+</body>
+</html>

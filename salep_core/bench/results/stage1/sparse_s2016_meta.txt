@@ -1,0 +1,1 @@
+kind=sparse seed=2016 ticks=30000 x_gap=200 L=8 p=0.8 j=2 q=0.002 n_x=153 n_linked=119 n_fake=51

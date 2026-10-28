@@ -1,0 +1,53 @@
+=== Sinaps Ogrenme Kurali + Gercek Akim Aktarimi Testi ===
+
+Dört faz: L0 (acik dongu ogrenmesi), L1 (kapali dongu), T1/T2 (transfer).
+Uyaran dongusu 500 tick, ogrenmede 20 kez, transferde 40 kez.
+
+>>> L0 OGRENME (ACIK DONGU, transfer=false)
+
+--- (a) Buyume dogrulamasi (L0) ---
+OK BUYUME DOGRULANDI: weight monoton artiyor.
+
+--- (b) Doygunluk (S regularizasyon) dogrulamasi (L0) ---
+  Ilk dongu ortalama |dw|/tick : 0.00018756
+  Son  dongu ortalama |dw|/tick : 0.00000000
+  Son weight: 2.000000  (W_MAX = 2.000000, oran = 100.0%)
+UYARI: doygunluk beklendigi kadar net degil.
+
+>>> L1 OGRENME (KAPALI DONGU, transfer=true)
+
+--- (a) Buyume dogrulamasi (L1) ---
+OK BUYUME DOGRULANDI: weight monoton artiyor.
+
+--- (b) Doygunluk (S regularizasyon) dogrulamasi (L1) ---
+  Ilk dongu ortalama |dw|/tick : 0.00021402
+  Son  dongu ortalama |dw|/tick : 0.00000000
+  Son weight: 2.000000  (W_MAX = 2.000000, oran = 100.0%)
+UYARI: doygunluk beklendigi kadar net degil.
+
+--- (c) Kapali dongu kararliligi (L1 vs L0) ---
+OK C1: L1 weight monoton artiyor
+OK C2: L1 dw buyuklugu yarisina dustu
+OK C3: L1 N1 ateş sayisi kontrol icinde (oran=1.32x: 382 vs 289)
+UYARI C4: L1 weight tavana ulasti ve tavan calisiyor
+OK C5: L1 N1 fire rate kontrol icinde (3.82% < 30%)
+UYARI: KAPALI DONGU KARSIZ — 4/5 gecti
+(Geri besleme goru: L0 n1/dongu ~14, L1 n1/dongu ~19)
+
+>>> T1 AKTARIM (dusuk weight=0.05, ogrenmesiz)
+
+>>> T2 AKTARIM (ogrenmis weight=2.000000, ogrenmesiz)
+
+--- (d) Akim aktarimi dogrulamasi ---
+N0 atesler: T1=480, T2=480 (kontrol: esit)
+N1 atesler: T1=0 (beklenen ~0), T2=79 (beklenen >=10)
+T2 ilk N1 ates dongusu: 0
+OK AKIM AKTARIMI DOGRULANDI: N1, N0'in sinaptik girdisiyle atesliyor (low:0.02*480=~0 ates, high:1.00*480=79 ates).
+
+=== ÖZET ===
+L0 CSV: synapse_learning.csv (10000 satir)
+L1 CSV: synapse_learning_closedloop.csv (10000 satir)
+T1 CSV: synapse_transfer_low.csv (20000 satir)
+T2 CSV: synapse_transfer_high.csv (20000 satir)
+
+UYARI: Bazı doğrulmalar başarısız veya sınırda.

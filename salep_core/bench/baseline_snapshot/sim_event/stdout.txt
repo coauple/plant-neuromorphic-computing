@@ -1,0 +1,6 @@
+=== Olay-Güdümlü Simülasyon Tamamlandı ===
+Toplam tick    : 500
+Aktif tick     : 191 (%38.2)
+Uyku tick      : 309 (%61.8)
+Ateşleme       : 6
+Çıktı          : neuron_trace_event.csv

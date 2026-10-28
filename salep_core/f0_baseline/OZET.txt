@@ -1,0 +1,1 @@
+OZET-PATTERN: olay=300 k_atis=0+42+136 p3_atis=47 mem=47 wk1=0.0000 wk2=0.0624 wk3=0.1071 wp3=1.0222,1.0607

@@ -1,0 +1,26 @@
+=== BITKI NPU: duyusal lob + kosul ogrenme (Pavlov) ===
+S_b=1.0 w0=0.2 eta=0.2, 10 kosullanma + 3 test blogu x 500 tick
+CSV yazildi: plant_learning.csv plant_conditions.csv plant_dualrail.csv
+
+=== (A) KILIT (coverage + konsantrasyon) ===
+bant-4: cov=0.83 conc=0.38(bilgi) ates=6067 | bant-12: cov=0.84 conc=0.67(bilgi) ates=3328
+OK (A): cov >= 0.40 iki bantta (gurultulu tel, §9.8 S2 kapisi)
+
+=== (B/D) KOSUL KAZANIMI + NEGATIF KONTROL ===
+NEM: w 0.2 -> 1.9946 (dw=+1.7946) cond_ates=415 test_ates(CR)=62
+EC: w 0.2 -> 0.2000 (dw=+0.0000) cond_ates=0 test_ates(CR)=0
+SIC: w 0.2 -> 2.0000 (dw=+1.8000) cond_ates=999 test_ates(CR)=117
+OK (B): NEM/SIC dw >= +0.3
+OK (D): EC |dw|=0.000000 (<0.02), TEST EC ates=0 (=0)
+OK (C): CR NEM=62 SIC=117 (>0, sensorsuz)
+
+=== OZET: KILIT=OK KAZANIM=OK NEGATIF=OK CR=OK ===
+
+=== (R) DUAL-RAIL (7 grounding + 2 capraz) ===
+TS: w=0.2000 (dw=+0.0000)
+TN: w=0.2000 (dw=+0.0000)
+PH: w=0.2000 (dw=+0.0000)
+NPK: w=0.2000 (dw=+0.0000)
+X1: w=2.0000 (dw=+1.8000)
+X2: w=1.9998 (dw=+1.7998)
+Rail-C tasiyici sayac (son pencere): hn=0 ec=0 hs=0 ts=0 tn=0 ph=0 npk=0

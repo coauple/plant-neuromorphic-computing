@@ -1,0 +1,9 @@
+  OK R1-ayni-kimlik-pencere r=0.814484
+  OK R2-farkli-pencere r=0.030548
+  OK R3-farkli-kimlik r=0.000000 pay=12
+  OK R4-marj marj=0.783936
+  OK R5-4-ayri-imza min-pay=12
+  OK R6-ortak-mod eslesen=0.814484 capraz-max=0.000000
+  OK R7-seyrek-destek rel_eslesensiz=0.000000(top=-1) rel_eslesenli=0.859116(top=21)
+  OK R8-spike-kapisi surum(spikesiz)=0.000000 surum(spikeli)=1.000000 top=31
+OZET-K4-REL: R1 R2 R3 R4 R5 R6 R7 R8

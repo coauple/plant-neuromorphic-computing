@@ -1,0 +1,19 @@
+{
+ "determinism_ok": true,
+ "stages": {
+  "R1_k1a_pattern": null,
+  "R1_k1b_pattern": 68,
+  "R1_refV": null,
+  "R1_slotV_subthr": null,
+  "R2_k2k3": [
+   null,
+   null
+  ],
+  "R3_elec": null,
+  "R3_label_inA": null,
+  "R3_label_inB": 68,
+  "R4_V": null,
+  "R4_soma": null
+ },
+ "verdict": "KAYIP-PROJEKSIYONDA (alt-tip: index-only identity \u2014 kimlik yalniz HANGI noronda, elektriksel buyuklukte degil)"
+}

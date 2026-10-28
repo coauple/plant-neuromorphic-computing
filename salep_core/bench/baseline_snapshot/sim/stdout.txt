@@ -1,0 +1,2 @@
+Simülasyon tamamlandı: 500 tick, 6 ateşleme
+Çıktı: neuron_trace.csv
