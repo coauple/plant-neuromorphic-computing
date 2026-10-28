@@ -24,3 +24,7 @@ salep_core/bench/build/
 *.key
 *_token*
 *_secret*
+
+# Editör ve IDE dizinleri
+.vscode/
+.idea/
