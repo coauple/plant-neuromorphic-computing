@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Salep Sibernetiği: Bitki Elektrofizyolojisinden Zamansal Nöromorfik Hesaplamaya"
+type: software
+authors:
+  - family-names: "Kılıç"
+    given-names: "Metehan Cafer"
+repository-code: "https://github.com/coauple/plant-neuromorphic-computing"
+license: MIT
+date-released: "2026-10-28"
+keywords:
+  - spiking neural networks
+  - neuromorphic computing
+  - plant electrophysiology
+  - dendritic computation
+  - fixed-point
+  - FPGA
+abstract: >-
+  Research prototype exploring spiking, dendritic, fixed-point neural
+  computation driven by (synthetic) plant electrophysiology. Includes a plant
+  simulator, a C++17 deterministic core and an independent evaluation that
+  reports negative results.
