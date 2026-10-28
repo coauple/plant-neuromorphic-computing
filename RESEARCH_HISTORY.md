@@ -3,7 +3,7 @@
 Bu belge kısa kronolojidir; ayrıntılı ve yorumlu anlatım için [README.md](README.md) §1 ve §7.
 
 Bu belge, projenin nasıl geliştiğini yalnız mevcut kayıtlardan
-(`salep_core/CLAUDE.md`, `ARCHITECTURE.md`, `CONTRACT_EVIDENCE.md`,
+(`salep_core/CLAUDE.md`, `CONTRACT_EVIDENCE.md`,
 `DENETIM_RAPORU_2026-10-14.md`, `bench/REPORT.md`, test dosyaları) özetler.
 Tarihi belgede yazmayan olay tarihsiz aktarılır; doğrulanamayan iddia
 "doğrulanmadı" diye işaretlenir.
@@ -13,7 +13,7 @@ Tarihi belgede yazmayan olay tarihsiz aktarılır; doğrulanamayan iddia
 Eylül 2026 geliştirme kayıtlarının başlangıcında, bitki biyoelektrik
 olaylarını işlemeye yönelik, çok kompartımanlı ve ileride FPGA'ya taşınması
 hedeflenen bir nöromorfik hesaplama çekirdeği tanımlanmıştır
-(`ARCHITECTURE.md` §1, `CLAUDE.md` §1–2). Üç katmanlı şema kayıtların başında
+(`CLAUDE.md` §1–2). Üç katmanlı şema kayıtların başında
 kuruldu: faz çözümleme → rekabetçi
 kümeleme → çapraz-bant nedensellik; CPU yalnız özet okur, ham veriyi yorumlamaz.
 

@@ -68,7 +68,7 @@ Bu belge, konuya hiç aşina olmayan bir okuyucunun baştan sona izleyebilmesi i
 
 **Bitkiye yönelme.** 2025'te küçük ölçekli salep yetiştiriciliğine başladım. *Salep*, Türkiye'de geleneksel olarak yumruları öğütülerek tüketilen yabani orkidelerin (*Anacamptis*, *Orchis* gibi cinsler) adıdır; "sibernetik" ise bu projede bir canlı sistemi *algılama–hesaplama–geri bildirim* döngüsüyle ele alma fikrini anlatır. Yetiştiricilik bende şu soruyu doğurdu: bitkinin stres durumunu sürekli, ucuz ve donanıma yakın bir yolla izlemek mümkün mü? Yani sensörler ve bitkinin kendi elektriksel olayları, düşük güçlü bir kenar donanımında (FPGA sınıfı) çalışabilen olay güdümlü bir sinir ağıyla yorumlanabilir mi? 2026'da bu iki hat, yani spiking öğrenme fikri ve bitki sinyali izleme sorusu, bugünkü projede birleşti.
 
-**Önceki prototip ve ondan aldığım ders.** Eylül 2026'dan önce önce bir tarayıcı prototipi, ardından FastAPI/WebSocket arka uçlu bir Python sürümü geliştirdim: sızıntılı entegre-ve-ateşle (LIF) dinamikleri, kuadratik öğrenme kuralı, yanal engelleme ve çevrimiçi K-means kümeleme içeriyordu. Bu prototipin kaydedilmiş bir zayıflığı var: *"14 nöron 36 faz alanını sıfır hatayla okur"* türü sayısal iddialar, gerçek bir simülasyonla sınanmadan mimariye gömülmüştü. Bu deneyim projenin yöntemini belirledi: **doğrulanmamış hiçbir sayısal iddiayı koda ya da mimariye sabitlemiyorum**; her iddia önce küçük bir Monte Carlo denemesinden geçiyor (günlük §0, [ARCHITECTURE.md](salep_core/ARCHITECTURE.md) §0).
+**Önceki prototip ve ondan aldığım ders.** Eylül 2026'dan önce önce bir tarayıcı prototipi, ardından FastAPI/WebSocket arka uçlu bir Python sürümü geliştirdim: sızıntılı entegre-ve-ateşle (LIF) dinamikleri, kuadratik öğrenme kuralı, yanal engelleme ve çevrimiçi K-means kümeleme içeriyordu. Bu prototipin kaydedilmiş bir zayıflığı var: *"14 nöron 36 faz alanını sıfır hatayla okur"* türü sayısal iddialar, gerçek bir simülasyonla sınanmadan mimariye gömülmüştü. Bu deneyim projenin yöntemini belirledi: **doğrulanmamış hiçbir sayısal iddiayı koda ya da mimariye sabitlemiyorum**; her iddia önce küçük bir Monte Carlo denemesinden geçiyor ([günlük](salep_core/CLAUDE.md) §0).
 
 **Eylül 2026: yeniden başlangıç.** Bu dersle çekirdeği C++'ta, baştan donanım kısıtlarıyla yeniden yazdım: çok bölmeli dendritik nöronlar, sabit nokta aritmetiği, dinamik bellek yok, deterministik zaman adımı. Hedefim, çekirdeği ileride bir Zynq sınıfı FPGA'ya yüksek seviyeli sentez (HLS) yoluyla taşıyabilmekti. Bundan sonrasını [§7](#7-geliştirme-süreci-ve-deneyler)'de adım adım anlatıyorum.
 
@@ -699,8 +699,7 @@ plant-neuromorphic-computing/
 ├── run_review.sh                ← tek komutla yeniden-üretim kontrolü
 ├── (kodu okumak için: salep_core/README.md "Kod okuma rehberi")
 └── salep_core/
-    ├── CLAUDE.md                ← geliştirme günlüğü ve "anayasa" (§0–§9.116)
-    ├── ARCHITECTURE.md          ← mimari belge
+    ├── CLAUDE.md                ← ASIL ARAŞTIRMA GÜNLÜĞÜ ve "anayasa" (§0–§9.116): kurallar, mimari, her deney
     ├── DENETIM_RAPORU_2026-10-14.md ← iç denetim
     ├── LEARN_BASELINE.md, LEARN_CHAR.md ← öğrenme kuralı taban çizgisi/karakterizasyonu
     ├── src/                     ← C++17 sabit-noktalı çekirdek (*.h) ve deney programları (main_*.cpp)
