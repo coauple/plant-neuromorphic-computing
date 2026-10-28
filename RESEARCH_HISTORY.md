@@ -100,7 +100,7 @@ README'deki yöntem notu).
   yumuşatılmadı (`bench/REPORT.md`, `TEST_PLAN.md` G5 kuralı).
 - 28 Ekim'de taze derlemenin Eylül CSV'leriyle bit-bit tutmaması, kanonik
   sayıların "kayıtlı binary" koşuluna bağlanmasına yol açtı
-  (`YENIDEN_URETIM_KONTROLU.md` §2/§5).
+  (Ekim 2026 yeniden-üretim denetimi, yerel arşivde).
 
 ## 7. Ulaşılan aşama (Ekim 2026)
 

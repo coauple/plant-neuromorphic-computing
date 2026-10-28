@@ -76,4 +76,4 @@ NPU hattı `{"status":"offline"}` döner. C++ programları `salep_core/` kökün
   `bench/build/` + `bench/baseline_snapshot/` içeriğini ezer; `plot_*.py` →
   `*.png` dosyalarını ezer. Kopyada çalışın.
 - Taze derleme Eylül CSV'leriyle bit-bit aynı değildir; duyusal lob taze
-  derlemede `A=UYARI` verir. Ayrıntı: [YENIDEN_URETIM_KONTROLU.md](YENIDEN_URETIM_KONTROLU.md).
+  derlemede `A=UYARI` verir (bkz. README'deki doğruluk durumu).
