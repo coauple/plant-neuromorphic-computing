@@ -58,7 +58,6 @@ Bu belge, konuya hiç aşina olmayan bir okuyucunun baştan sona izleyebilmesi i
 12. [Depo haritası](#12-depo-haritası)
 13. [Yapay zekâ kullanımı beyanı](#13-yapay-zekâ-kullanımı-beyanı)
 14. [Lisans, atıf ve veri kaynakları](#14-lisans-atıf-ve-veri-kaynakları)
-15. [Kaynakça](#15-kaynakça)
 
 ---
 ## 1. Araştırmanın doğuşu
@@ -698,6 +697,7 @@ plant-neuromorphic-computing/
 ├── LICENSE, LICENSE-DOCS.md     ← kod (PolyForm Noncommercial) ve belge/veri (CC BY-NC 4.0) lisansı
 ├── CITATION.cff                 ← atıf bilgisi
 ├── run_review.sh                ← tek komutla yeniden-üretim kontrolü
+├── (kodu okumak için: salep_core/README.md "Kod okuma rehberi")
 └── salep_core/
     ├── CLAUDE.md                ← geliştirme günlüğü ve "anayasa" (§0–§9.116)
     ├── ARCHITECTURE.md          ← mimari belge
@@ -739,51 +739,3 @@ Bu proje büyük ölçüde bir yapay zekâ kodlama asistanının (Anthropic Clau
 
 - Hava verisi: Open-Meteo (Zippenfenig, 2023), CC BY 4.0, Aydın için günlük sıcaklık, yağış ve UV.
 - Gerçek bitki elektrofizyolojisi: Madariaga ve ark. (2024), "A library of electrophysiological responses in plants", figshare, DOI 10.6084/m9.figshare.25425920.v2, CC BY 4.0. Bu veri bu depoda *çoğaltılmamıştır*; indirme adresi `bench/REAL_DATA_SEARCH.md` içindedir.
-
----
-
----
-
-## 15. Kaynakça
-
-Bi, G. & Poo, M. (1998). Synaptic modifications in cultured hippocampal neurons: dependence on spike timing, synaptic strength, and postsynaptic cell type. *Journal of Neuroscience*, 18(24), 10464–10472.
-
-Bienenstock, E. L., Cooper, L. N. & Munro, P. W. (1982). Theory for the development of neuron selectivity. *Journal of Neuroscience*, 2(1), 32–48.
-
-Choi, W.-G., Toyota, M., Kim, S.-H., Hilleary, R. & Gilroy, S. (2014). Salt stress-induced Ca²⁺ waves are associated with rapid, long-distance root-to-shoot signaling in plants. *PNAS*, 111(17), 6497–6502.
-
-Davies, M. ve ark. (2018). Loihi: A neuromorphic manycore processor with on-chip learning. *IEEE Micro*, 38(1), 82–99.
-
-Madariaga, D., Arro, D., Irarrázaval, C., Soto, A., Guerra, F., Romero, A., Ovalle, F., Fedrigolli, E., DesRosiers, T., Serbe-Kamp, É. & Marzullo, T. (2024). A library of electrophysiological responses in plants – a model of transversal education and open science. *Plant Signaling & Behavior*, 19(1), 2310977. https://doi.org/10.1080/15592324.2024.2310977 (veri: figshare, https://doi.org/10.6084/m9.figshare.25425920.v2)
-
-Fromm, J. & Lautner, S. (2007). Electrical signals and their physiological significance in plants. *Plant, Cell & Environment*, 30(3), 249–257.
-
-Gerstner, W. & Kistler, W. M. (2002). *Spiking Neuron Models*. Cambridge University Press.
-
-Gerstner, W., Kistler, W. M., Naud, R. & Paninski, L. (2014). *Neuronal Dynamics*. Cambridge University Press.
-
-Hebb, D. O. (1949). *The Organization of Behavior*. Wiley.
-
-Hodgkin, A. L. & Huxley, A. F. (1952). A quantitative description of membrane current and its application to conduction and excitation in nerve. *Journal of Physiology*, 117(4), 500–544.
-
-Izhikevich, E. M. (2003). Simple model of spiking neurons. *IEEE Transactions on Neural Networks*, 14(6), 1569–1572.
-
-Kılıç, M. C. (2026). *Salep Sibernetiği* (çalışma metni). Zenodo. https://doi.org/10.5281/zenodo.22651379
-
-Maass, W. (1997). Networks of spiking neurons: the third generation of neural network models. *Neural Networks*, 10(9), 1659–1671.
-
-Maass, W. (2000). On the computational power of winner-take-all. *Neural Computation*, 12(11), 2519–2535.
-
-Mead, C. (1990). Neuromorphic electronic systems. *Proceedings of the IEEE*, 78(10), 1629–1636.
-
-Merolla, P. A. ve ark. (2014). A million spiking-neuron integrated circuit with a scalable communication network and interface. *Science*, 345(6197), 668–673.
-
-Mousavi, S. A. R., Chauvin, A., Pascaud, F., Kellenberger, S. & Farmer, E. E. (2013). GLUTAMATE RECEPTOR-LIKE genes mediate leaf-to-leaf wound signalling. *Nature*, 500, 422–426.
-
-Poirazi, P., Brannon, T. & Mel, B. W. (2003). Pyramidal neuron as two-layer neural network. *Neuron*, 37(6), 989–999.
-
-Toyota, M. ve ark. (2018). Glutamate triggers long-distance, calcium-based plant defense signaling. *Science*, 361(6407), 1112–1115.
-
-Volkov, A. G. (ed.) (2006). *Plant Electrophysiology: Theory and Methods*. Springer.
-
-Zippenfenig, P. (2023). Open-Meteo.com Weather API. Zenodo. https://doi.org/10.5281/zenodo.7970649
