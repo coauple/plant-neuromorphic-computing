@@ -7,4 +7,4 @@ Unless stated otherwise, the documentation (`*.md`, `*.txt`) and the data output
 ## Üçüncü taraf veriler / Third-party data (bu bildirimin kapsamı dışında)
 
 - Hava verisi / Weather data: Open-Meteo (CC BY 4.0), https://open-meteo.com
-- Bitki elektrofizyolojisi / Plant electrophysiology: DesRosiers et al., figshare, doi:10.6084/m9.figshare.25425920.v2 (CC BY 4.0)
+- Bitki elektrofizyolojisi / Plant electrophysiology: Madariaga et al., figshare, doi:10.6084/m9.figshare.25425920.v2 (CC BY 4.0)

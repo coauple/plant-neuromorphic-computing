@@ -5,7 +5,7 @@ Hiçbir aday uydurulmadı; reddedilenler gerekçesiyle listeli.
 
 ## Kabul edilen
 
-- **A library of electrophysiological responses in plants** (DesRosiers vd.)
+- **A library of electrophysiological responses in plants** (Madariaga vd.)
   - URL: https://tandf.figshare.com/articles/dataset/25425920
   - DOI: 10.6084/m9.figshare.25425920.v2 (API ile doğrulandı)
   - Lisans: **CC BY 4.0** (API `license.name`, araştırma kullanımına uygun;
