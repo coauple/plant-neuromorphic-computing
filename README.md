@@ -692,7 +692,8 @@ plant-neuromorphic-computing/
 ├── DENEYLER_VE_ANALIZLER.md     ← deney kataloğu ve kanıt etiketleri
 ├── RESEARCH_HISTORY.md          ← kronolojik araştırma tarihçesi
 ├── DOSYA_LISTESI.txt            ← dosya envanteri
-├── LICENSE, CITATION.cff        ← lisans ve atıf bilgisi
+├── LICENSE, LICENSE-DOCS.md     ← kod (MIT) ve belge/veri (CC BY 4.0) lisansı
+├── CITATION.cff                 ← atıf bilgisi
 └── salep_core/
     ├── CLAUDE.md                ← geliştirme günlüğü ve "anayasa" (§0–§9.116)
     ├── ARCHITECTURE.md          ← mimari belge
@@ -722,7 +723,7 @@ Bu proje büyük ölçüde bir yapay zekâ kodlama asistanının (Anthropic Clau
 
 ## 14. Lisans, atıf ve veri kaynakları
 
-**Lisans.** Kaynak kod [MIT Lisansı](LICENSE) altındadır. Belgeler ve ürettiğimiz veri çıktıları (CSV, şekiller) aksi belirtilmedikçe CC BY 4.0 koşullarıyla paylaşılır (ayrıntı `LICENSE` dosyasında).
+**Lisans.** Kaynak kod [MIT Lisansı](LICENSE) altındadır. Belgeler ve ürettiğimiz veri çıktıları (CSV, şekiller) aksi belirtilmedikçe CC BY 4.0 koşullarıyla paylaşılır (ayrıntı [LICENSE-DOCS.md](LICENSE-DOCS.md)).
 
 **Atıf.** Bu çalışmaya atıf için bkz. [CITATION.cff](CITATION.cff):
 
