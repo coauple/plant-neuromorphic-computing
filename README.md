@@ -64,7 +64,7 @@ Bu belge, konuya hiç aşina olmayan bir okuyucunun baştan sona izleyebilmesi i
 
 > **Kanıt notu.** Bu bölümün 2022–2025 dönemini anlatan kısmı kendi anlatımımdır; depoda bu döneme ait kayıt yoktur. Kayıtlı, tarihli ve doğrulanabilir geliştirme Eylül 2026'da başlar ([günlük](salep_core/CLAUDE.md) §9.9 ilk tarihli kayıt: 8 Eylül 2026). İki dönemi bilerek ayrı tuttum.
 
-**Kişisel ve entelektüel arka plan.** Bu projeyi kurumsal bir laboratuvarın dışında, tek başıma ve bağımsız olarak yürütüyorum. 2022'de makine öğrenmesi makalelerini saf merakla okumaya başladım; bu merak zamanla beni yapay sinir ağlarının biyolojik olarak daha gerçekçi bir ailesine, yani spiking sinir ağlarına ve nöromorfik sistemlere (olay güdümlü, zamanı hesabın bir parçası yapan sistemler) götürdü. Aynı yıl, yapay zekâ araçlarının yardımıyla, iki nöronun ateşleme *oranlarına* bağlı kuadratik bir sinaptik öğrenme formülü geliştirdim. Formülün gerçekten çalışıp çalışmadığından emin olamadığım için bu fikri rafa kaldırdım; 2026'da çalışma taslağı olarak Zenodo'ya yükledim ([kaynakça](#15-kaynakça), Kılıç, 2026).
+**Kişisel ve entelektüel arka plan.** Bu projeyi kurumsal bir laboratuvarın dışında, tek başıma ve bağımsız olarak yürütüyorum. 2022'de makine öğrenmesi makalelerini saf merakla okumaya başladım; bu merak zamanla beni yapay sinir ağlarının biyolojik olarak daha gerçekçi bir ailesine, yani spiking sinir ağlarına ve nöromorfik sistemlere (olay güdümlü, zamanı hesabın bir parçası yapan sistemler) götürdü. Aynı yıl, yapay zekâ araçlarının yardımıyla, iki nöronun ateşleme *oranlarına* bağlı kuadratik bir sinaptik öğrenme formülü geliştirdim. Formülün gerçekten çalışıp çalışmadığından emin olamadığım için bu fikri rafa kaldırdım; 2026'da çalışma taslağı olarak Zenodo'ya yükledim (Kılıç, 2026: [https://doi.org/10.5281/zenodo.22651379](https://doi.org/10.5281/zenodo.22651379)).
 
 **Bitkiye yönelme.** 2025'te küçük ölçekli salep yetiştiriciliğine başladım. *Salep*, Türkiye'de geleneksel olarak yumruları öğütülerek tüketilen yabani orkidelerin (*Anacamptis*, *Orchis* gibi cinsler) adıdır; "sibernetik" ise bu projede bir canlı sistemi *algılama–hesaplama–geri bildirim* döngüsüyle ele alma fikrini anlatır. Yetiştiricilik bende şu soruyu doğurdu: bitkinin stres durumunu sürekli, ucuz ve donanıma yakın bir yolla izlemek mümkün mü? Yani sensörler ve bitkinin kendi elektriksel olayları, düşük güçlü bir kenar donanımında (FPGA sınıfı) çalışabilen olay güdümlü bir sinir ağıyla yorumlanabilir mi? 2026'da bu iki hat, yani spiking öğrenme fikri ve bitki sinyali izleme sorusu, bugünkü projede birleşti.
 
@@ -727,7 +727,9 @@ Bu proje büyük ölçüde bir yapay zekâ kodlama asistanının (Anthropic Clau
 
 **Atıf.** Bu çalışmaya atıf için bkz. [CITATION.cff](CITATION.cff):
 
-> Kılıç, M. C. (2026). *Salep Sibernetiği: Bitki elektrofizyolojisinden zamansal nöromorfik hesaplamaya.* GitHub: coauple/plant-neuromorphic-computing. [DOI: Zenodo kaydı sonrası eklenecek]
+> Kılıç, M. C. (2026). *Salep Sibernetiği: Bitki elektrofizyolojisinden zamansal nöromorfik hesaplamaya.* GitHub: coauple/plant-neuromorphic-computing.
+>
+> İlgili çalışma taslağı (Zenodo): [https://doi.org/10.5281/zenodo.22651379](https://doi.org/10.5281/zenodo.22651379)
 
 **Üçüncü taraf veriler.**
 
