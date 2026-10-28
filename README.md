@@ -34,7 +34,7 @@ Bu belge, konuya hiç aşina olmayan bir okuyucunun baştan sona izleyebilmesi i
 | **20 dakika** | Yukarıdakine ek olarak [§2 Problem](#2-problem-ve-araştırma-sorusu) → [§4 Terimler](#4-terimler-sözlüğü) → [§6 Mimari](#6-sistem-mimarisi) | Sistemin ne olduğu ve nasıl çalıştığı |
 | **Tam okuma** | Baştan sona; deneylerin ayrıntısı [§7](#7-geliştirme-süreci-ve-deneyler)'de | Her kararın nedeni, her deneyin sorusu, sonucu ve sınırı |
 
-Çalıştırmak isterseniz: [§11 Tekrarlanabilirlik](#11-tekrarlanabilirlik-kurulum-ve-doğrulama) ve [QUICKSTART.md](QUICKSTART.md). Kısa bir inceleme turu için [INCELEME_REHBERI.md](INCELEME_REHBERI.md).
+**Tek komutla kontrol:** `bash run_review.sh` (g++ ve python3/numpy yeterli, ~2 sn; geçici kopyada çalışır, kayıtlı dosyalara dokunmaz) — bir deneyi derler, çıktının SHA-256'sını ve özet satırlarını kayıtlı değerlerle karşılaştırır. Çalıştırmak isterseniz: [§11 Tekrarlanabilirlik](#11-tekrarlanabilirlik-kurulum-ve-doğrulama) ve [QUICKSTART.md](QUICKSTART.md). Kısa bir inceleme turu için [INCELEME_REHBERI.md](INCELEME_REHBERI.md).
 
 **Kanıt etiketleri.** Depodaki belgelerde bir iddianın kanıt düzeyi şu etiketlerle belirtilir: `[KOŞULDU]` = 28 Ekim 2026'da taze derlemeden çalıştırılıp doğrulandı; `[BELGE]` = çalıştırılmadı, kayıtlı belge ve kod okumasına dayanır; `KANITLANDI / KISMEN / HİPOTEZ / TEST EDİLMEDİ / GÖZLENMEDİ` = [salep_core/CONTRACT_EVIDENCE.md](salep_core/CONTRACT_EVIDENCE.md) içindeki kanıt haritası dili (*gözlenmedi*, "test edildi ama çıkmadı" demektir).
 
@@ -656,6 +656,8 @@ Bu bölüm, bir hakem raporunun "threats to validity" bölümüne karşılık ge
 
 ## 11. Tekrarlanabilirlik, kurulum ve doğrulama
 
+**Hızlı kontrol (önerilen ilk adım).** Depo kökünde `bash run_review.sh`: geçici bir kopyada tek nöron deneyini ve örüntü lobunu derler, çıktıları kayıtlı SHA-256 ve özet satırlarıyla karşılaştırır, ardından association ve çıkarım doğrulamalarını (163/165; determinizm; sızıntısızlık) çalıştırır. Beklenen sonuç: `7 geçti, 0 kaldı`.
+
 **Gereksinimler.** `g++` (C++17), Python 3.10, `pip` ve `salep_core/requirements.txt` (sürümleri sabitlenmiş: numpy, pandas, matplotlib, starlette, uvicorn, websockets, rich). Web arayüzünün bir kapısı için `node` gerekir. Ayrıntılı adımlar [QUICKSTART.md](QUICKSTART.md) ve [INCELEME_REHBERI.md](INCELEME_REHBERI.md) içindedir; her komutun yanında `[KOŞULDU]` / `[KODDAN]` / `[KOŞULMADI]` etiketi bulunur.
 
 **Önemli uyarı.** Deneyler çıktılarını çalışılan dizine yazar ve kayıtlı sonuç dosyalarının üzerine yazabilir. Bu yüzden depoyu *kopyalayarak* çalışın:
@@ -694,6 +696,7 @@ plant-neuromorphic-computing/
 ├── DOSYA_LISTESI.txt            ← dosya envanteri
 ├── LICENSE, LICENSE-DOCS.md     ← kod (MIT) ve belge/veri (CC BY 4.0) lisansı
 ├── CITATION.cff                 ← atıf bilgisi
+├── run_review.sh                ← tek komutla yeniden-üretim kontrolü
 └── salep_core/
     ├── CLAUDE.md                ← geliştirme günlüğü ve "anayasa" (§0–§9.116)
     ├── ARCHITECTURE.md          ← mimari belge
