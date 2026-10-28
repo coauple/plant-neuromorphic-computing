@@ -58,7 +58,6 @@ Bu belge, konuya hiç aşina olmayan bir okuyucunun baştan sona izleyebilmesi i
 12. [Depo haritası](#12-depo-haritası)
 13. [Yapay zekâ kullanımı beyanı](#13-yapay-zekâ-kullanımı-beyanı)
 14. [Lisans, atıf ve veri kaynakları](#14-lisans-atıf-ve-veri-kaynakları)
-15. [Kaynakça](#15-kaynakça)
 
 ---
 ## 1. Araştırmanın doğuşu
