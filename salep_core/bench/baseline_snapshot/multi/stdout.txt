@@ -1,0 +1,18 @@
+=== Çoklu Nöron Karşılaştırma Testi ===
+
+Uyaran: Faz 1 (50-80, 5/tick, 0.5), Faz 2 (150-180, 3/tick, 0.8), Faz 3 (220-250, 5/tick, 0.5)
+Her nörona iki dala birden enjekte ediliyor.
+
+  Hızlı ritim (düşük leak, yüksek gating decay): 12 ateşleme, ilk tick=55 → multi_N0_hizli_ritim.csv
+  Yavaş ritim (yüksek leak, düşük gating decay): 11 ateşleme, ilk tick=65 → multi_N1_yavas_ritim.csv
+  Dengeli (mevcut varsayılan): 14 ateşleme, ilk tick=56 → multi_N2_dengeli.csv
+
+╔════════════════════════════╦══════════╦══════════╦══════════════╦══════════════╦══════════════╗
+║ Nöron tipi                 ║ Toplam   ║ İlk tick ║ Faz 1 fires  ║ Faz 2 fires  ║ Faz 3 fires  ║
+╠════════════════════════════╬══════════╬══════════╬══════════════╬══════════════╬══════════════╣
+║ Hızlı ritim (düşük leak, yüksek gating decay) ║   12     ║    55    ║      3       ║      6       ║      3       ║
+║ Yavaş ritim (yüksek leak, düşük gating decay) ║   11     ║    65    ║      2       ║      6       ║      3       ║
+║ Dengeli (mevcut varsayılan) ║   14     ║    56    ║      3       ║      7       ║      4       ║
+╚════════════════════════════╩══════════╩══════════╩══════════════╩══════════════╩══════════════╝
+
+✓ DOĞRULANDI: Farklı nöron tipleri aynı uyarana farklı tepki veriyor.

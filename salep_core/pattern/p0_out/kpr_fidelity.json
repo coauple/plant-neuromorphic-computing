@@ -1,0 +1,24 @@
+{
+ "gates": {
+  "step-equiv": true,
+  "KBHP-repro": true,
+  "S-share": true,
+  "determinizm": true,
+  "frozen-sha": true
+ },
+ "frozen_sha12": {
+  "src/pattern_lobe.h": "a8307fc384c2",
+  "src/pattern_unit_v2.h": "776388062ed7",
+  "pattern/pl_core.py": "3c4d0efc065f",
+  "pattern/P0_SPEC.md": "720da523b9e6",
+  "pattern/P0B_SPEC.md": "579beeb70944",
+  "pattern/P0C_SPEC.md": "77b43c0e3c15",
+  "pattern/T_AMP_SPEC.md": "062f6344d895",
+  "pattern/IDEN_SPEC.md": "a971a10940de"
+ },
+ "C0": {
+  "d0": 7,
+  "d1": 12,
+  "S_share": 0.0272
+ }
+}

@@ -1,0 +1,1 @@
+tick=16800 toplam_mul=2970304 toplam_div=13504 mul_per_tick=176.80 div_per_tick=0.8038 (init haric: mul=2970304 div=13504)

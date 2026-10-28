@@ -1,0 +1,1 @@
+kind=demux seed=2002 taus=4,12 foreign=6,8,10 segs_per_type=8 seg_ticks=300 pextra=0 jit=0 total_ticks=16800 n_pulses=2538

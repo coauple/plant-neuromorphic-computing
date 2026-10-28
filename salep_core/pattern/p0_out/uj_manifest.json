@@ -1,0 +1,30 @@
+{
+ "sha256": "1afeeb2fdec6b7add039522777ce24b209982f405545b480e17b1940aa10afed",
+ "manifest": {
+  "conds": [
+   "K1",
+   "K2",
+   "K3",
+   "JOINT"
+  ],
+  "inh_amp": 1.0,
+  "episodes": [
+   [
+    5,
+    6,
+    0
+   ],
+   [
+    5,
+    6,
+    17
+   ],
+   [
+    4,
+    5,
+    9
+   ]
+  ],
+  "weights": "upl_weights.json"
+ }
+}

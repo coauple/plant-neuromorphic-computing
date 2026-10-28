@@ -1,0 +1,42 @@
+{
+ "HUKUM": "INCE (n=1/bin: mesafe olculdu, yayilim-tabani yok; PASS verilmez)",
+ "bins": [
+  0,
+  17
+ ],
+ "cross_dt_distance": 0.826154,
+ "cross_pair_distance": 0.026721,
+ "n_per_bin": {
+  "0": 1,
+  "17": 1
+ },
+ "sigs": {
+  "0": {
+   "X": "5",
+   "Y": "6",
+   "dt": "0",
+   "fire_ticks": "-",
+   "max_soma": 0.91873,
+   "n_fires": "0",
+   "tag": "main"
+  },
+  "1": {
+   "X": "5",
+   "Y": "6",
+   "dt": "17",
+   "fire_ticks": "-",
+   "max_soma": 0.730815,
+   "n_fires": "0",
+   "tag": "main"
+  },
+  "2": {
+   "X": "4",
+   "Y": "5",
+   "dt": "9",
+   "fire_ticks": "-",
+   "max_soma": 0.904907,
+   "n_fires": "0",
+   "tag": "ident"
+  }
+ }
+}

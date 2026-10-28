@@ -1,0 +1,22 @@
+{
+ "sha256": "550aca33586b7fef12278410e389d61f169c52015e388a97ab841c9d4a4afcb3",
+ "manifest": {
+  "conds": [
+   "K1",
+   "K2",
+   "K3",
+   "JOINT"
+  ],
+  "dal_map": {
+   "A": "K3",
+   "B": [
+    "K1",
+    "K2"
+   ]
+  },
+  "k": 0.5,
+  "r": 0.05,
+  "weights": "unf_weights.json",
+  "train_cycles": 60
+ }
+}

@@ -1,0 +1,284 @@
+{
+ "sha256": "5c7c2b2a258e9ec8434b5e1f85c20eb3d11ae2da5eb216d4a50d096a4f52adc0",
+ "manifest": {
+  "conds": [
+   [
+    "CORE",
+    {
+     "phi_a": 120,
+     "phi_b": 60,
+     "dt": 5,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "CORE",
+    {
+     "phi_a": 120,
+     "phi_b": 240,
+     "dt": 5,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "CORE",
+    {
+     "phi_a": 120,
+     "phi_b": 60,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "CORE",
+    {
+     "phi_a": 120,
+     "phi_b": 240,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "CORE",
+    {
+     "phi_a": 120,
+     "phi_b": 60,
+     "dt": 30,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "CORE",
+    {
+     "phi_a": 120,
+     "phi_b": 240,
+     "dt": 30,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "ORD",
+    {
+     "phi_a": 120,
+     "phi_b": 60,
+     "dt": 5,
+     "order": "BA",
+     "amp": 1.0
+    }
+   ],
+   [
+    "ORD",
+    {
+     "phi_a": 120,
+     "phi_b": 240,
+     "dt": 5,
+     "order": "BA",
+     "amp": 1.0
+    }
+   ],
+   [
+    "ORD",
+    {
+     "phi_a": 120,
+     "phi_b": 60,
+     "dt": 10,
+     "order": "BA",
+     "amp": 1.0
+    }
+   ],
+   [
+    "ORD",
+    {
+     "phi_a": 120,
+     "phi_b": 240,
+     "dt": 10,
+     "order": "BA",
+     "amp": 1.0
+    }
+   ],
+   [
+    "ORD",
+    {
+     "phi_a": 120,
+     "phi_b": 60,
+     "dt": 30,
+     "order": "BA",
+     "amp": 1.0
+    }
+   ],
+   [
+    "ORD",
+    {
+     "phi_a": 120,
+     "phi_b": 240,
+     "dt": 30,
+     "order": "BA",
+     "amp": 1.0
+    }
+   ],
+   [
+    "SCALE",
+    {
+     "phi_a": 120,
+     "phi_b": 0,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "SCALE",
+    {
+     "phi_a": 120,
+     "phi_b": 30,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "SCALE",
+    {
+     "phi_a": 120,
+     "phi_b": 60,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "SCALE",
+    {
+     "phi_a": 120,
+     "phi_b": 90,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "SCALE",
+    {
+     "phi_a": 120,
+     "phi_b": 120,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "SCALE",
+    {
+     "phi_a": 120,
+     "phi_b": 150,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "SCALE",
+    {
+     "phi_a": 120,
+     "phi_b": 180,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "SCALE",
+    {
+     "phi_a": 120,
+     "phi_b": 210,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "SCALE",
+    {
+     "phi_a": 120,
+     "phi_b": 240,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "SCALE",
+    {
+     "phi_a": 120,
+     "phi_b": 270,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "SCALE",
+    {
+     "phi_a": 120,
+     "phi_b": 300,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "SCALE",
+    {
+     "phi_a": 120,
+     "phi_b": 330,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "AMPCTL",
+    {
+     "phi_a": 120,
+     "phi_b": 60,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.0
+    }
+   ],
+   [
+    "AMPCTL",
+    {
+     "phi_a": 120,
+     "phi_b": 60,
+     "dt": 10,
+     "order": "AB",
+     "amp": 1.25
+    }
+   ]
+  ],
+  "relay_L": 7,
+  "A_PARAMS": {
+   "n_readout": 12,
+   "feed_amp": 1.0,
+   "common_k2k3": true
+  },
+  "B_PARAMS": {
+   "chain": 12,
+   "chain_amp": 2.0,
+   "feed_amp": 1.0
+  },
+  "train": {
+   "n_pulse": 5,
+   "isi": 12,
+   "t0": 50,
+   "horizon": 200
+  }
+ }
+}

@@ -1,0 +1,8 @@
+ENC SUMMARY (E5 karar raporu, olculmus sayi):
+olay: 407/15000 tick (yogunluk 0.0271); canli post: 8 (0 1 2 3 4 5 6 7); olu: 8 9 (240/270 karanlik); yedek 10/11 bos.
+phi_id: 30 derece adim, 0 cakisma. phi_tau: 2 cakisma grubu [(35, [0, 2]), (37, [6, 7])] (aranan bulgu).
+D1 es-atesme cifti: 82 cift, en sik: [(9000, 65), (3000, 9), (6000, 7), (15000, 1)] (x100).
+D2 ardisik adim: 406 adim, en sik: [(9000, 77), (3000, 68), (0, 60), (6000, 47), (-3000, 45)] (x100).
+D3 |Dphi| mod 30deg: [(0, 406)] — tum kutle 0'da (faz-kilitli, ara-faz YOK).
+KARAR: 8 dendrit adayi (8 canli post); bantlama GEREKMEZ — D3 ara-faz gostermiyor, faz-basina-bir yeter (olculdu, tahmin degil).
+ACIK KALEM: p2i/p2j olu (240/270 karanlik) — gercek kusur, faz tasarimi degil.

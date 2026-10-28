@@ -1,0 +1,29 @@
+=== NEDENSELLIK KOPRUSU: demux + coincidence + ogrenme ===
+w0=0.4 eta=0.2 pulse=0.8, 20 super-dongu x 1500 tick
+CSV yazildi: causality_learning.csv
+
+=== (A) COINCIDENCE BONUSU ===
+Faz1(A): target ates=134 coinc tick=0 pre=[300 0 0 0]
+Faz2(B): target ates=114 coinc tick=0 pre=[0 0 141 0]
+Faz3(A+B): target ates=257 coinc tick=1520 pre=[400 0 140 0]
+F3/(F1+F2) = 1.04x
+UYARI (A): F3 >= 2x(F1+F2), C1=C2=0, C3>>0
+
+=== (B/D) DW IVMESI + BLOK KAZANCLARI ===
+faz-turu basina ortalama |dw|/tick:
+Faz1(A): s0=0.000000 s1=0.000000 s2=0.000000 s3=0.000000
+Faz2(B): s0=0.000000 s1=0.000000 s2=0.000000 s3=0.000000
+Faz3(A+B): s0=0.000000 s1=0.000000 s2=0.000001 s3=0.000000
+toplam blok kazanclari (20 super x faz):
+Faz1(A): s0=+1.241806 s1=+0.000000 s2=+0.393280 s3=+0.000000
+Faz2(B): s0=+0.306458 s1=+0.000000 s2=+0.031982 s3=+0.000000
+Faz3(A+B): s0=+0.051743 s1=+0.000000 s2=+1.174530 s3=+0.000000
+UYARI (B): Faz3 kazanci > tek-kanal faz kazanci (s0: F3>F1, s2: F3>F2)
+UYARI (D): Faz3 toplam kazanc > F1+F2 toplami
+
+=== (C) NEGATIF KONTROL (P1/P3) ===
+P1 ates=0 P3 ates=0 (beklenen 0)
+w1: 0.399994 -> 0.399994  w3: 0.399994 -> 0.399994
+OK (C): s1/s3 sabit (dw=0)
+
+=== OZET: A=UYARI B=UYARI C=OK D=UYARI ===

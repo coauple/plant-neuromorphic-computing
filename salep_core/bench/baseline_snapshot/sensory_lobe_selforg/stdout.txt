@@ -1,0 +1,29 @@
+=== FAZ 4 oz-orgutlenme: ortak yol + etiketsiz havuz ===
+havuz(12): tau20 tau24 tau28 tau32 tau35 tau36 tau40 tau44 tau48 tau52 tau56 tau60
+ faz: [0,1500) bus{35} [1500,3500) +37 [3500,5500) +45
+RECRUIT t=1813 tau=37 slot=12 (medyan 37)
+RECRUIT t=3870 tau=45 slot=13 (medyan 45)
+
+--- olculen etiketler (kabul ISI medyani) ---
+  p2a (tau+20): gezgin-medyan45 (kabul 24)
+  p2b (tau+24): gezgin-medyan55 (kabul 24)
+  p2c (tau+28): gezgin-medyan70 (kabul 24)
+  p2d (tau+32): p2@tau70 (kabul 24)
+  p2e (tau+35): p2@tau35 (kabul 24)
+  p2f (tau+36): p2@tau74 (kabul 24)
+  p2g (tau+40): gezgin-medyan90 (kabul 24)
+  p2h (tau+44): p2@tau90 (kabul 24)
+  p2i (tau+48): p2@tau105 (kabul 24)
+  p2j (tau+52): p2@tau111 (kabul 24)
+  p2k (tau+56): gezgin-medyan127 (kabul 24)
+  p2l (tau+60): gezgin-medyan135 (kabul 24)
+  p2m (tau+37): p2@tau37 (kabul 24)
+  p2n (tau+45): p2@tau45 (kabul 24)
+OK (S1): tau35 tam kilit 43/43
+OK (S2): komsu orani 158>=2x70
+OK (S3): ise-alim sirasi [37,45], olusan [37,45]
+  hire0 tau37: 98/100 (0.98) OK
+  hire1 tau45: 34/37 (0.92) OK
+OK (S4): tau35 kilidi son 500 tick'te suruyor
+
+=== OZET-SELFORG: S1=OK S2=OK S3=OK S3b=OK S4=OK ===

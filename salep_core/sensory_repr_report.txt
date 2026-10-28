@@ -1,0 +1,8 @@
+DUYUSAL TEMSIL RAPORU (§9.66)
+soru: kac distinct sensory state olusuyor?
+cevap: 67 exact gun-imzasi / 165 atesli gun + 7 afferent etiketi; kaba-4'lu 5/6 tekil (sulama=recovery cakismasi), tam imza 6/6 ayri.
+within=0.520 between=0.277 ayrisma=0.243; LOO saflik=0.473; siluet=-0.017 (gun-tekili ortusur, kimlik pencere-toplaminda).
+PCA: PC1=0.391 PC2=0.235 min-merkez=0.05 (analiz-disi).
+artefaktlar: sensory_raster.csv, sensory_sequences.csv, sensory_signatures.csv.
+etiket-girdisiz: WINDOWS yalniz bu analizde; sim girdileri etiketsiz.
+OZET-SENSORY-REPR: R1 temsil R3 ayrisma R5 assoc-regresyon R6 etiket-girdisiz + F1_CAKISMA + F2_ORTUSME

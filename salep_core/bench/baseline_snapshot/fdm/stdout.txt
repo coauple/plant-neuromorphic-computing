@@ -1,0 +1,35 @@
+=== FDM: simultane demux (PLIR + populasyon + faz kilidi) ===
+bw=1 lock=2tau+1 pulse=0.8 N_POP=8 (validate_fdm.py)
+
+=== (A) KILIT (conc + coverage) ===
+R1 S1{4,12}: conc=(0.49,0.82) cov=(0.98,0.98) ates=(3160,1600) OK
+R2 S2{4,12}: conc=(0.35,0.69) (bilgi) cov=(0.84,0.84) ates=(2834,1592) OK
+R3 S1{4,9}: conc=(0.79,0.50) cov=(0.67,0.50) ates=(3976,1596) OK
+R4 S2{4,9}: conc=(0.52,0.49) (bilgi) cov=(0.72,0.46) ates=(3748,1609) OK
+R9 karsitlik (eski-ISI): yavas ates R1=1600 R9=8
+
+=== (A2) MUTLAK FAZ (MC tahmini +-0.5) ===
+R1{4,12}: merkez=(1.50,2.17) tahmin=(1.50,2.18) sapma=(0.00,0.01) OK
+R3{4,9}: merkez=(1.16,0.64) tahmin=(1.16,0.65) sapma=(0.00,0.01) OK
+
+=== (B) TANI (hit: gecikme-karisik, kapisiz) ===
+R1 S1{4,12}: hit_fast=0.51 hit_slow=0.00
+R2 S2{4,12}: hit_fast=0.65 hit_slow=0.13
+R3 S1{4,9}: hit_fast=0.80 hit_slow=0.83
+R4 S2{4,9}: hit_fast=0.79 hit_slow=0.76
+
+=== (C) FAZ SIFRELEME (D9 -> merkez kaymasi) ===
+D9=0: merkez=0.64 kayma_hatasi=0.00 yayilim=0.00 OK
+D9=2: merkez=2.64 kayma_hatasi=0.00 yayilim=0.01 OK
+D9=4: merkez=4.67 kayma_hatasi=0.03 yayilim=0.01 OK
+D9=6: merkez=6.65 kayma_hatasi=0.01 yayilim=0.01 OK
+
+=== (D) POPULASYON (S2 kararlilik + uye birligi) ===
+S1/S2{4,12} bant0(tau=4): S1->S2 kayma=0.25 yayilim=(0.00,0.09) OK
+S1/S2{4,12} bant1(tau=12): S1->S2 kayma=0.09 yayilim=(0.01,0.03) OK
+S1/S2{4,9} bant0(tau=4): S1->S2 kayma=0.18 yayilim=(0.00,0.03) OK
+S1/S2{4,9} bant1(tau=9): S1->S2 kayma=0.09 yayilim=(0.00,0.02) OK
+
+CSV: fdm_simultaneous.csv fdm_events.csv fdm_dshift.csv
+
+=== OZET: A=OK A2=OK C=OK D=OK ===

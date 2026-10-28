@@ -1,0 +1,25 @@
+{
+ "sha256": "66e36269b07788e5e6ad33f98c3882016ed3fbbe2fc124f7bfca21c974d9dcec",
+ "manifest": {
+  "dts": [
+   0,
+   2,
+   5,
+   8,
+   10,
+   15,
+   20,
+   30
+  ],
+  "phi_a": 120,
+  "phi_b": 90,
+  "amp": 4.0,
+  "inh": 1.0,
+  "train": {
+   "n_pulse": 5,
+   "isi": 12,
+   "t0": 50,
+   "horizon": 200
+  }
+ }
+}

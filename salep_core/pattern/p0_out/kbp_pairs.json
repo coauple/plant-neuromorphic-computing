@@ -1,0 +1,54 @@
+{
+ "kaynak": "encoder/out/aff300_afferent.csv (salt-okunur, E0 donuk kablo)",
+ "olay": 407,
+ "ciftler": [
+  {
+   "X": 1,
+   "Y": 4,
+   "destek": 58,
+   "X_dal": "A",
+   "Y_dal": "B",
+   "kural": "kucuk-post -> A-dali, buyuk-post -> B-dali (on-kayitli)"
+  },
+  {
+   "X": 0,
+   "Y": 2,
+   "destek": 7,
+   "X_dal": "A",
+   "Y_dal": "B",
+   "kural": "kucuk-post -> A-dali, buyuk-post -> B-dali (on-kayitli)"
+  },
+  {
+   "X": 0,
+   "Y": 3,
+   "destek": 7,
+   "X_dal": "A",
+   "Y_dal": "B",
+   "kural": "kucuk-post -> A-dali, buyuk-post -> B-dali (on-kayitli)"
+  },
+  {
+   "X": 2,
+   "Y": 3,
+   "destek": 7,
+   "X_dal": "A",
+   "Y_dal": "B",
+   "kural": "kucuk-post -> A-dali, buyuk-post -> B-dali (on-kayitli)"
+  },
+  {
+   "X": 5,
+   "Y": 6,
+   "destek": 2,
+   "X_dal": "A",
+   "Y_dal": "B",
+   "kural": "kucuk-post -> A-dali, buyuk-post -> B-dali (on-kayitli)"
+  },
+  {
+   "X": 1,
+   "Y": 6,
+   "destek": 1,
+   "X_dal": "A",
+   "Y_dal": "B",
+   "kural": "kucuk-post -> A-dali, buyuk-post -> B-dali (on-kayitli)"
+  }
+ ]
+}

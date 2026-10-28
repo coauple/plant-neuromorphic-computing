@@ -1,0 +1,6 @@
+yontem,mul_per_tick,addcmp_per_tick,durum_bit
+S(fdm,2x8),16*11=176 mul,~16*14=224 add/cmp,16 noron x ~480b = ~7.7Kb
+B1,0 mul,2 add + 1 AND,tau+8 bit (<24b)
+B2,1 mul,2 add,100 ornek x 16b = 1.6Kb
+B3,2 mul,2 add,2 x 32b + katsayi
+B4,0 mul,~2 add/cmp,~4 sayac x 8b

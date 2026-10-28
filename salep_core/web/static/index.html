@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salep Dijital İkizi — Web</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="title">Salep Dijital İkizi <span class="sub">sim + npu · tek veri kaynağı</span></div>
+  <div class="hud" id="hud">
+    <span id="hud-speed">—</span>
+    <span class="dot" id="dot-world" title="world"></span>
+  </div>
+</header>
+<main class="grid">
+  <section class="panel view">
+    <div class="tabs">
+      <button id="tab2d" class="tab active">Terraryum Kesiti (2D)</button>
+      <button id="tab3d" class="tab">3D</button>
+    </div>
+    <canvas id="view2d" width="720" height="450"></canvas>
+    <div id="view3d-wrap" class="hidden">
+      <canvas id="view3d" width="720" height="450"></canvas>
+      <div id="view3d-note" class="note hidden"></div>
+    </div>
+  </section>
+  <aside class="panel data">
+    <h2>Canlı Veriler</h2>
+    <div class="datalist">
+      <div><span>Tarih</span><b id="data-date">—</b></div>
+      <div><span>Dönem</span><b id="data-stage" title="Bitki gelişme dönemi">—</b></div>
+      <div><span>Tohum</span><b id="data-seed" title="Birey tohumu · toprak (canlı liste)">—</b></div>
+      <div><span>İklim</span><b>Ege</b></div>
+      <div><span>Mevsim</span><b id="data-season">—</b></div>
+      <div><span>Hava</span><b id="data-temp">—</b></div>
+      <div><span>Uygulanan</span><b id="data-applied" title="Fiziğin gördüğü günlük ortalama">—</b></div>
+      <div><span>Toprak</span><b id="data-soilt">—</b></div>
+      <div><span>Gök</span><b id="data-sky">—</b></div>
+      <div><span>Yağış</span><b id="data-rain">—</b></div>
+      <div><span>Gün uzunluğu</span><b id="data-photo">—</b></div>
+      <div><span>UV</span><b id="data-uv">—</b></div>
+      <div><span>Boy</span><b id="data-height">—</b></div>
+    </div>
+  </aside>
+  <aside class="panel data">
+    <h2>Bitki Sensörleri</h2>
+    <div class="datalist">
+      <div><span>Toprak nemi</span><b id="sens-soil">—</b></div>
+      <div><span>Tuzluluk (EC)</span><b id="sens-ec" title="Yanık eşiği 3.4 mS/cm (kanal 68)">—</b></div>
+      <div><span>Hava nemi</span><b id="sens-hn" title="Türetilmiş model (0-100 endeks, % gibi okunur)">—</b></div>
+      <div><span>Hava sıcaklığı</span><b id="sens-hs" title="Ham kanalın fiziksel karşılığı">—</b></div>
+      <div><span>Toprak sıcaklığı</span><b id="sens-ts" title="Ham kanalın fiziksel karşılığı (~7 günlük gecikmeli)">—</b></div>
+      <div><span>Toprak nemi (kanal)</span><b id="sens-tn">—</b></div>
+      <div><span>Toprak pH'ı</span><b id="sens-ph" title="Kanal 0-100 → pH 4-9 eşlemesi (türetilmiş model)">—</b></div>
+      <div><span>Besin (NPK endeksi)</span><b id="sens-npk" title="Türetilmiş model, 0-100 besin endeksi">—</b></div>
+      <div><span>Yaprak sağlığı</span><b id="sens-leaf">—</b></div>
+      <div><span>Kök sağlığı</span><b id="sens-root">—</b></div>
+      <div><span>Su dengesi</span><b id="sens-water">—</b></div>
+      <div><span>O2 açığı</span><b id="sens-o2">—</b></div>
+    </div>
+  </aside>
+  <aside class="panel actions">
+    <h2>Müdahaleler</h2>
+    <div class="cards">
+      <button data-cmd="water10">Sulama 10mm</button>
+      <button data-cmd="water20">Sulama 20mm</button>
+      <button data-cmd="fert15">Gübre 15</button>
+      <button data-cmd="fert30">Gübre 30</button>
+    </div>
+    <div class="legend">Tek atımlık: o günün fiziğine işler.</div>
+    <h2>Toprak</h2>
+    <div class="cards">
+      <button data-cmd="soil_kumlu">Kumlu</button>
+      <button data-cmd="soil_tinli">Tınlı</button>
+      <button data-cmd="soil_killi">Killi</button>
+    </div>
+    <div class="legend">Saksı değişir, içindeki su durur.</div>
+    <h2>Hız</h2>
+    <div class="cards">
+      <button data-cmd="pause">Duraklat</button>
+      <button data-cmd="resume">Sürdür</button>
+      <button data-cmd="speed1">Hız 1x</button>
+      <button data-cmd="speed8">Hız 8x</button>
+      <button data-cmd="sprint">Sprint 60x</button>
+    </div>
+    <div class="legend">Akış hızı; günlük fiziği değiştirmez.</div>
+  </aside>
+</main>
+<section class="panel signal">
+  <h2>Sinyal Yayılımı — Duyusal Lob + Pattern Lob <span id="sig-live" class="badge">bağlanıyor…</span></h2>
+  <div class="legend">Bitki teli → P1 (16 slot, 2 aktif) → P2 (64 slot, 10 aktif) → afferent → kablo → 29 pattern birimi. CANLI: bitki P1 ateşi (p1a/p1b) zincir bitki akışından, P2 ateşi zincir afferent akışından (post=P2), pattern act/spike live_k4 akışından, sensör teli kare sensörlerinden, kablo NPU telemetrisinden. P1 ateşi aynı hattın P2 A-dalını kısık yakar (eşik-altı sürüş, spike değil). Atımlar tel boyunca dal-dal gezer (tek gerçek olayın kaskadı).</div>
+  <svg id="sigsvg" viewBox="0 0 1540 1000" role="img" aria-label="lob sinyal şeması"></svg>
+  <div class="siginfo">
+    <div><span>Zincir</span><b id="sig-chain">—</b></div>
+    <div><span>Son afferent</span><b id="sig-aff">—</b></div>
+    <div><span>Pattern</span><b id="sig-k4">—</b></div>
+    <div><span>NPU</span><b id="sig-npu">—</b></div>
+  </div>
+</section>
+<div id="toast" class="toast hidden"></div>
+<script src="/static/js/profile.js"></script>
+<script type="module" src="/static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+{
+ "HUKUM": "KORUR",
+ "M1": true,
+ "M2p": {
+  "0": {
+   "driven": true,
+   "stable": true,
+   "winners": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "30": {
+   "driven": true,
+   "stable": true,
+   "winners": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "60": {
+   "driven": true,
+   "stable": true,
+   "winners": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ]
+  },
+  "90": {
+   "driven": true,
+   "stable": true,
+   "winners": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ]
+  },
+  "120": {
+   "driven": true,
+   "stable": true,
+   "winners": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
+  },
+  "150": {
+   "driven": true,
+   "stable": true,
+   "winners": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ]
+  },
+  "180": {
+   "driven": true,
+   "stable": true,
+   "winners": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+   ]
+  },
+  "210": {
+   "driven": true,
+   "stable": true,
+   "winners": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ]
+  },
+  "240": {
+   "driven": true,
+   "stable": true,
+   "winners": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ]
+  },
+  "270": {
+   "driven": true,
+   "stable": true,
+   "winners": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9
+   ]
+  },
+  "300": {
+   "driven": true,
+   "stable": true,
+   "winners": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+   ]
+  },
+  "330": {
+   "driven": true,
+   "stable": true,
+   "winners": [
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11
+   ]
+  }
+ },
+ "M4": {
+  "1.0@50/INH0.0": {
+   "coverage": "12/12",
+   "full": true
+  },
+  "1.0@50/INH1.0": {
+   "coverage": "12/12",
+   "full": true
+  },
+  "1.0@70/INH0.0": {
+   "coverage": "12/12",
+   "full": true
+  },
+  "1.0@70/INH1.0": {
+   "coverage": "12/12",
+   "full": true
+  },
+  "2.0@50/INH0.0": {
+   "coverage": "12/12",
+   "full": true
+  },
+  "2.0@50/INH1.0": {
+   "coverage": "12/12",
+   "full": true
+  },
+  "2.0@70/INH0.0": {
+   "coverage": "12/12",
+   "full": true
+  },
+  "2.0@70/INH1.0": {
+   "coverage": "12/12",
+   "full": true
+  },
+  "4.0@50/INH0.0": {
+   "coverage": "12/12",
+   "full": true
+  },
+  "4.0@50/INH1.0": {
+   "coverage": "12/12",
+   "full": true
+  },
+  "4.0@70/INH0.0": {
+   "coverage": "12/12",
+   "full": true
+  },
+  "4.0@70/INH1.0": {
+   "coverage": "12/12",
+   "full": true
+  }
+ },
+ "M5": {
+  "1.0@50": true,
+  "1.0@70": true,
+  "2.0@50": true,
+  "2.0@70": true,
+  "4.0@50": true,
+  "4.0@70": true
+ },
+ "zero_link": []
+}

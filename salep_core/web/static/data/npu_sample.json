@@ -1,0 +1,1 @@
+{"cc": [3, 3, 7, 0, 0, 0, 0], "f": "110000001", "note": "Gercek npu_plant_npu --stream kosusundan (SET hn80/tn30/hs75/ec60, T675). w sirasi C++ post dizimi p0..p8; ad eslemesi yaklasiktir (HN/EC/HS/TS/TN/PH/NPK/X1/X2).", "t": 675, "w": [0.49, 0.49, 1.65, 0.2, 0.2, 0.2, 0.2, 1.65, 0.49], "w_prev": [0.434, 0.434, 1.451, 0.2, 0.2, 0.2, 0.2, 1.451, 0.434], "wire": 0.0}
