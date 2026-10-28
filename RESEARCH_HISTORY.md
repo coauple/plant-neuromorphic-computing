@@ -1,5 +1,7 @@
 # Araştırma Geçmişi (Research History)
 
+Bu belge kısa kronolojidir; ayrıntılı ve yorumlu anlatım için [README.md](README.md) §1 ve §7.
+
 Bu belge, projenin nasıl geliştiğini yalnız mevcut kayıtlardan
 (`salep_core/CLAUDE.md`, `ARCHITECTURE.md`, `CONTRACT_EVIDENCE.md`,
 `DENETIM_RAPORU_2026-10-14.md`, `bench/REPORT.md`, test dosyaları) özetler.
