@@ -19,16 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-----------------------------------------------------------------------------
-Documentation and data outputs
-
-Unless stated otherwise, the documentation (*.md, *.txt) and the data outputs
-produced by this project (CSV files, figures) are licensed under the Creative
-Commons Attribution 4.0 International License (CC BY 4.0):
-https://creativecommons.org/licenses/by/4.0/
-
-Third-party data are NOT covered by this notice:
-- Weather data: Open-Meteo (CC BY 4.0), https://open-meteo.com
-- Plant electrophysiology: DesRosiers et al., figshare
-  doi:10.6084/m9.figshare.25425920.v2 (CC BY 4.0)
