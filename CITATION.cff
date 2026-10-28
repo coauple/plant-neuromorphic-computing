@@ -6,7 +6,7 @@ authors:
   - family-names: "Kılıç"
     given-names: "Metehan Cafer"
 repository-code: "https://github.com/coauple/plant-neuromorphic-computing"
-license: MIT
+license: PolyForm-Noncommercial-1.0.0
 date-released: "2026-10-28"
 keywords:
   - spiking neural networks
