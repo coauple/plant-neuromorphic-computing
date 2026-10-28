@@ -1,5 +1,7 @@
 # Deneyler ve Analizler (Experiments & Analyses)
 
+Anlatı ve toplu bulgular için [README.md](README.md); hızlı doğrulama için `bash run_review.sh`.
+
 Bütün deneylerin listesi: soru, program, komut, girdi/çıktı, sonuç, sınır.
 `[KOŞULDU 28 Eki]` = bu paketin kopyasında gerçekten çalıştırıldı;
 `[BELGE]` = koşulmadı, kayıtlı belge + kod okumasına dayanır, sonuç sayıları
