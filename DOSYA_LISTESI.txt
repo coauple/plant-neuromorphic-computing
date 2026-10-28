@@ -1,4 +1,4 @@
-# AKADEMIK_PAYLASIM dosya listesi (28 Eki 2026, boyut bayt)
+# Dosya listesi (28 Eki 2026, boyut bayt)
 # Toplam: 124407530 bayt
 9299	./DENEYLER_VE_ANALIZLER.md
 492	./.gitignore
