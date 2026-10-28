@@ -1,4 +1,4 @@
-# Salep Sibernetiği — Akademik Paylaşım Kopyası
+# Salep Sibernetiği
 
 ## Araştırma sorusu
 
@@ -22,7 +22,7 @@ mekanizmalar (kuadratik kural, akım aktarımı) ve duyusal/örüntü işleme
 sınırlar belgelerde açık.
 
 Henüz **bütünleşik ve doğrulanmış biçimde geliştirilmedi**: öğrenilmiş koşul
-temsillerinden kavram oluşturma ve türetme, kavramsal çıkarım, nedensel
+temsilinden kavram oluşturma ve türetme, kavramsal çıkarım, nedensel
 modelleme ve öngörü. Bunlar gelecek araştırma hedefleridir, mevcut paket
 bunları içeriyor gibi okunmamalıdır.
 
@@ -41,8 +41,8 @@ Giriş noktaları:
 - [YENIDEN_URETIM_KONTROLU.md](YENIDEN_URETIM_KONTROLU.md) — 28 Eki 2026
   yeniden-üretim denetimi
 
-Bu klasör GitHub'a yüklenmek üzere hazırlanmış paylaşımdır; henüz hiçbir yere
-yüklenmemiştir. Kaynak kodlar ve sonuçlar değiştirilmeden alınmıştır.
+Bu klasör GitHub'a yüklenmek üzere hazırlanmış bir arşiv paketidir; henüz
+hiçbir yere yüklenmemiştir. Kaynak kodlar ve sonuçlar değiştirilmeden alınmıştır.
 
 ## Yöntem notu: skorlar neyi ölçer, neyi ölçmez?
 
@@ -138,7 +138,7 @@ bash bench/snapshot.sh                  # C++ determinizm anlık görüntüsü
 
 Not: sanitizer ile derlenen programlar bazı ortamlarda `ASAN_OPTIONS=detect_leaks=0`
 ile koşulmalıdır (bkz. `CLAUDE.md` §9.9). `web/g24_parity.mjs` için `node`
-gerekir. Gerçek-veri adımı (`bench` Aşama 7) bu paketten koşulamaz: kaynak arşiv
+gereklidir. Gerçek-veri adımı (`bench` Aşama 7) bu paketten koşulamaz: kaynak arşiv
 yeniden-dağıtım izni doğrulanmadığı için paylaşıma alınmadı (altta).
 
 > **ÜZERİNE-YAZMA UYARISI:** Bu depodaki testler kayıtlı sonuçların üzerine yazar.
