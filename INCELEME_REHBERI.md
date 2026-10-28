@@ -121,7 +121,7 @@ Testler varsayılan çıktıyı kaynak dizine yazar. İki güvenli yoldan biri:
 
 ```bash
 # Yöntem 1 (önerilir): paketin kopyasında çalış
-cp -a AKADEMIK_PAYLASIM /tmp/inceleme && cd /tmp/inceleme/salep_core
+cp -a plant-neuromorphic-computing /tmp/inceleme && cd /tmp/inceleme/salep_core
 # ... derle, koş, boz; asıl paket temiz kalır
 
 # Yöntem 2: C++ deneyleri için boş dizin + mutlak girdi yolu (Deney A–C yukarıda)
