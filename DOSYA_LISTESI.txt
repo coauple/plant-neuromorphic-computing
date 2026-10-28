@@ -1,8 +1,9 @@
 # AKADEMIK_PAYLASIM dosya listesi (28 Eki 2026, boyut bayt)
-# Toplam: 102236625 bayt
+# Toplam: 124321438 bayt
+492	./.gitignore
 7005	./INCELEME_REHBERI.md
-10126	./README.md
-7525	./RESEARCH_HISTORY.md
+10122	./README.md
+7611	./RESEARCH_HISTORY.md
 18413	./salep_core/.agents/plans/2026-09-16-pattern-unit-migration.md
 7201	./salep_core/.agents/plans/2026-09-19-rev4-realk4.md
 42035	./salep_core/aonly_dense_spikes.csv
