@@ -33,7 +33,7 @@ vermez; tarla verisiyle doğrulanmamıştır.
 Giriş noktaları:
 
 - [INCELEME_REHBERI.md](INCELEME_REHBERI.md) — 10–15 dakikalık ilk teknik tur
-- [ARCHITECTURE.md](salep_core/ARCHITECTURE.md) — mimari ve tasarım kısıtları
+- [CLAUDE.md](salep_core/CLAUDE.md) — mimari ve tasarım kısıtları
 - [CONTRACT_EVIDENCE.md](salep_core/CONTRACT_EVIDENCE.md) — hangi iddia
   kanıtlı, hangisi hipotez (B1–B11 tablosu)
 - [bench/REPORT.md](salep_core/bench/REPORT.md) — bağımsız değerlendirme
