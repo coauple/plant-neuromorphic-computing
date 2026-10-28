@@ -137,4 +137,4 @@ komutları belgede yazdığı gibidir ancak bu denetimde **koşulmadı**.
 
 1. `README.md` (doğruluk durumu) → 2. `salep_core/CONTRACT_EVIDENCE.md` (B1–B11)
    → 3. `salep_core/bench/REPORT.md`
-   yönetici özeti → 4. `salep_core/ARCHITECTURE.md`.
+   yönetici özeti → 4. `salep_core/CLAUDE.md` (asıl araştırma günlüğü: kurallar, mimari ve her deney).

@@ -13,8 +13,7 @@ Projenin anlatısı ve bulguları için kökteki [README.md](../README.md) dosya
 | `weather_v3/` | Aydın hava verisi (Open-Meteo) |
 | `stress_out*/`, `f0_baseline/` | Stres bataryası ve regresyon çıktıları |
 | `validate_*.py` | Doğrulama betikleri (determinizm, sızıntı, doğruluk kapıları) |
-| `CLAUDE.md` | Geliştirme günlüğü: her deney `§9.xx` numarasıyla kayıtlıdır |
-| `ARCHITECTURE.md` | Mimari belge |
+| `CLAUDE.md` | **Asıl araştırma günlüğü:** kurallar (§0), mimari (§1…), her deney `§9.xx` numarasıyla kayıtlıdır |
 | `DENETIM_RAPORU_2026-10-14.md` | İç denetim raporu |
 | `*.csv`, `*.png` | Deney çıktıları ve şekiller |
 
