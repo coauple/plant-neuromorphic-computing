@@ -649,8 +649,12 @@ Bu bölüm, bir hakem raporunun "threats to validity" bölümüne karşılık ge
 4. **Kuraklık ≈ normal ayırt edilemezliği.** Sensör/P1 kanalından kuraklığa özgü bir bilgi eklemek (ör. nem sensörü yolunun B dalını sessizleştirmeyen bir yapı) ve bunun ayrımı değiştirip değiştirmediğini ön-kayıtlı olarak test etmek.
 5. **Gerçek veride etiketli deney.** Daha net etiketli bir bitki elektrofizyolojisi veri seti veya kendi kayıt düzeneği; S ile basit referansların aynı protokolde karşılaştırılması.
 6. **Donanım yolu.** Sentez aracı ile (ör. açık kaynak HLS/FPGA zinciri) gerçek kaynak ve gecikme ölçümü.
-7. **Kapalı çevrim.** Yalnız 1–2 tamamlandıktan sonra, açık onayla.
-8. **Bağımsız zaman damgalı ön-kayıt.** Yukarıdaki deneyler için OSF/Zenodo üzerinde.
+7. **Bütünleşik çıkarım motoru, nedensellik ve öngörü.** Bugünkü sistem bunları tek bir bütün olarak içermiyor: çıkarım ve nedensellik deneyleri ayrı betiklerde ve erken karakterizasyon düzeyinde (§7 Evre 7–8, §9). Hedefim, mevcut zamansal temsillerin (örüntü lobu, afferent kayıtlar) üzerine sistem düzeyinde bir *çıkarım motoru* kurmaktır:
+   - **Çıkarım:** görülmemiş bir yörüngede bitkinin durumunu (normal, kuraklık, tuz stresi vb.) zamansal temsilden çıkarmak; önceden kayıtlı başarı ölçütüyle (madde 1–2 ile birlikte).
+   - **Nedensellik:** hangi çevresel olayın hangi elektriksel yanıtı doğurduğunu, simülatörde kontrollü müdahalelerle (olayı ekle/çıkar) ve ayrı bir karşı-olgusal kontrolle sınamak.
+   - **Öngörü:** temsilden bir sonraki olay ya da durumun tahmini; basit referanslara (son değer, hareketli ortalama) karşı karşılaştırılarak.
+8. **Kapalı çevrim.** Yalnız 1–2 ve 7 tamamlandıktan sonra, açık onayla.
+9. **Bağımsız zaman damgalı ön-kayıt.** Yukarıdaki deneyler için OSF/Zenodo üzerinde.
 
 ---
 
