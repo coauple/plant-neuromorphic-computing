@@ -1,10 +1,20 @@
-# Belgeler ve veri çıktıları için lisans / Licence for documentation and data
+# Lisans özeti / Licence summary
 
-Kaynak kod [MIT Lisansı](LICENSE) altındadır. Aksi belirtilmedikçe **belgeler** (`*.md`, `*.txt`) ve bu projenin ürettiği **veri çıktıları** (CSV dosyaları, şekiller) **Creative Commons Atıf 4.0 Uluslararası (CC BY 4.0)** lisansı altındadır: https://creativecommons.org/licenses/by/4.0/
+| Kapsam | Lisans |
+|---|---|
+| **Kaynak kod** (`*.h`, `*.cpp`, `*.py`, `*.sh`, `*.js`) | [PolyForm Noncommercial 1.0.0](LICENSE) |
+| **Belgeler** (`*.md`, `*.txt`) ve bu projenin ürettiği **veri çıktıları ve şekiller** (CSV, PNG) | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode) (kaynak gösterme + ticari olmayan kullanım) |
+| **Üçüncü taraf veriler** (aşağıda) | Kendi lisansları; bu bildirim onları değiştirmez |
 
-Unless stated otherwise, the documentation (`*.md`, `*.txt`) and the data outputs produced by this project (CSV files, figures) are licensed under CC BY 4.0. Source code is under the MIT License.
+**Ticari olmayan** kullanım (araştırma, eğitim, inceleme, kişisel kullanım, kamu araştırma kurumları) serbesttir. **Ticari kullanım** için yazardan ayrıca izin/lisans alınmalıdır.
 
-## Üçüncü taraf veriler / Third-party data (bu bildirimin kapsamı dışında)
+Bu düzen teknik anlamda *açık kaynak* değil, *kaynağı görülebilir (source-available)* bir düzendir.
 
-- Hava verisi / Weather data: Open-Meteo (CC BY 4.0), https://open-meteo.com
-- Bitki elektrofizyolojisi / Plant electrophysiology: Madariaga et al., figshare, doi:10.6084/m9.figshare.25425920.v2 (CC BY 4.0)
+Documentation and data outputs are licensed under CC BY-NC 4.0; source code under PolyForm Noncommercial 1.0.0. Commercial use requires a separate licence from the author. This is source-available, not open source.
+
+## Üçüncü taraf veriler / Third-party data
+
+Aşağıdaki materyal bu projeye ait değildir ve **ticari olmayan kullanım şartına tabi değildir**; kendi lisanslarıyla kullanılır:
+
+- Hava verisi / Weather data (`salep_core/weather_v3/` ve ilgili kaynaklar): Open-Meteo, CC BY 4.0, https://open-meteo.com
+- Bitki elektrofizyolojisi / Plant electrophysiology: Madariaga et al. (2024), figshare, doi:10.6084/m9.figshare.25425920.v2 (CC BY 4.0). Bu depoda çoğaltılmamıştır.
