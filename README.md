@@ -2,6 +2,8 @@
 
 *Salep Cybernetics — temporal neuromorphic computation for plant electrophysiology: an experimental prototype and its documented development history.*
 
+🌐 **English readers:** a one-page overview is available in [SUMMARY.en.md](SUMMARY.en.md).
+
 > **Durum: araştırma prototipi (Eylül–Ekim 2026).** Bu depo tamamlanmış bir tanı ya da ürün **değildir**. Sentetik (simüle edilmiş) bitki verisi üzerinde bir hesaplama mimarisinin ne yapabildiğini, ne yapamadığını ve bunu nasıl ölçtüğümüzü, olumsuz sonuçlar dahil, kayıt altına alır. Gerçek bir bitkiden alınmış elektrot kaydıyla doğrulanmış hiçbir iddia **yoktur**.
 
 ---
