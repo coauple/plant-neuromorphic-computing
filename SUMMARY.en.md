@@ -1,6 +1,6 @@
 # Salep Cybernetics — English summary
 
-*The main documentation of this repository is written in Turkish ([README.md](README.md)). This page is a one-page English overview for international readers.*
+*This page is a one-page English overview for international readers. The **full English documentation** — background, architecture, every experiment, findings and limitations — is in [README.en.md](README.en.md) (a complete translation of the Turkish [README.md](README.md)).*
 
 ## What this is
 
