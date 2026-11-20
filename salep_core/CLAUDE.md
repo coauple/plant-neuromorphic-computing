@@ -3056,3 +3056,76 @@ verildi: `fireP1` T1KEYS'i derinlige gore (85 ms/katman) atesler,
 P1 varisinda soma + p1in yanar, sonra T2KEYS ayni hattan acilir ve
 `driveP2` gelir; sensor teli degisimi SW sirasinda 900 ms'ye yayilir
 (`signal.js` + legend). Kapi G38 aynen yesil (jetonlar korundu).
+
+## 9.117 Ritim probu + LSB olu-bant denetimi (2026-11-21 00:49, Cumartesi; GOZLEM — kod DONUK)
+
+Cikis sorusu (Izhikevich 2006 polikronizasyon okumasi): pattern lob kendi
+ritmini uretiyor mu, ag kendi sesini girdiden ayirabiliyor mu? Cekirdek,
+lob, kural, parametre DEGISMEDI (§9.102/§9.109 freeze korunur); yalniz iki
+salt-okunur prob eklendi: `probe_rhythm_silence.py` + `check_lsb_deadband.cpp`.
+Ek: `run_review.sh` bagimsiz makinede 7/7 GECTI (SHA + sayilar birebir).
+
+Ritim probu (4 kosul: K4 0/1 x eta 0/0.30; donuk binary):
+- T1 sessizlik (20000 tick girdisiz): spike 0, K4 aktif satir 0.
+- T2 sur-kes (TEST B, sonra 29000 tick sessiz): spike'lar <=4 tick'te durur
+  (yanki YOK). AMA K4 voltaji sifira inmez (asagida).
+- T3 Poisson gurultu (60000 tick, 10 tohum, hiz+(post,tau) TEST B esli):
+  tepe/medyan guc girdi 2.2, cikti ~5-6, rastgele-zaman kontrolu 2.2-2.4;
+  tepe periyodu tohumdan tohuma 32..819 (tutarli frekans YOK); birim ISI
+  CV ~1.0 (Poisson-benzeri). HUKUM: lob kendi ritmini URETMEZ; fazlalik
+  ayni-tick coklu-birim kumelenmesidir, salinim degil. (Lobda E-I
+  dongusu tasarim geregi yok — ornek birimidir, islem birimi degil.)
+
+LSB olu-bant (kok neden: `fixed_mul` asagi yuvarlar; carpimsal sonumde
+sonum*sapma < 1 LSB olunca adim 0 olur, deger donar). Gercek
+`compartment_apply_leak/update_gating` ile 1.0'dan 200000 tick olculdu:
+- Voltaj tabani: kok/K4 (0.08) 12 LSB; A_K1 (0.06) 16; B_K1/B_K2/B_K3 (0.04)
+  25; A_K2 (0.10) 10; A_K3 (0.02) 50 LSB (0.00076).
+- Gating tabani: 100..500 LSB (0.0015..0.0076; A_K3 500). Eslesik reset
+  gating'e dokunmadigi icin gating tabani KALICIDIR.
+- K4 iliski matrisi r (0.125): 7 LSB. Sinaps erisilebilirlik (LAMBDA
+  0.005): taban+200 LSB = +0.00305 — §9.106'daki "~0.003 olu-bant"in
+  aciklamasi budur. Iz T 1'e dogru buyur (1-7 LSB'de durur, zararsiz).
+- Taban yalniz USTTEN yaklasimda olusur: V_RESET (-0.2) altindan yukselen
+  deger tam 0'a ulasir (asimetri). Voltaj tabani birim atesiyle silinir.
+- Bu, §9.93 Q3 "±1 tick kayma = fixed-point kuantalama hafizasi" ve
+  §9.94 "tasiyici voltaj rezidulleri" gozlemlerinin ortak kok nedenidir.
+
+Etki (olculdu):
+- Davranis: cekirdekte "deger > 0" diye soran karar YOK (tarandi); bu
+  probta tek spike degismedi. Taban birikmez (sabit), determinizm korunur.
+- OLCUM: `act>0` tanimli metrikler sisirilir. TEST B'de lifetime_proxy
+  act>0 1517 tick / act>20 LSB 163 / act>0.001 89 (~9x); common-mode
+  0.997/0.984/0.962 (az etkilenir). §9.92 K4 bataryasinin lifetime_proxy'ye
+  dayanan yorumlari yeniden bakilmali (batarya yeniden KOSULMADI).
+- Telemetri: k4csv sessiz kuyrukta satir uretmeye devam eder (1.69M satirin
+  %70'i girdi bittikten sonra; 72 MB; kosu 0.6 sn -> 1.7 sn).
+- Hayalet partner YOK (toppartner bu kosularda hep -1).
+- Donanim: Q16.16 hedef oldugu icin FPGA'da birebir ayni olur. Tam paralel
+  tasarimda enerji etkisi ihmal edilebilir (sabit deger anahtarlama yapmaz);
+  zaman-paylasimli/olay-surumlu tasarimda "dinlenmede mi" kosulu hic
+  saglanmaz -> seyreklik kazanci kaybolur.
+
+Kararlar (kullanici, bu oturum):
+- Taban mimariye bir sey KATMIYOR (bellek degil: herkese ayni deger, tek
+  bitlik, atesle silinir; zaman bilgisi tick sayaclarinda).
+- Cekirdek SIMDI degismez. Once analizler: `act>0` yerine kucuk esik
+  (oneri 20 LSB) + etkilenen sonuclarin yeniden hesabi.
+- Kalan-yazmac (error feedback) EKLENMEZ — model buyudukce kaynak maliyeti.
+- Ileride zaman-paylasimli mimariye gecilince tembel guncelleme (olay
+  gelince V*(1-leak)^dt, LUT) ile birlikte cozulur.
+
+Notlu secenekler (UYGULANMADI, karar gerektirir):
+- "En az 1 LSB sonum": anlamli bolgede bit-ayni; ama olu-bant ici surekli
+  kucuk girdiyi (or. 1 LSB/tick) siler (dogru denge ~12.5 LSB, mevcut kod
+  13, bu secenekle 0). Snap-to-rest ayni sorunu tasir.
+- Kalan-yazmac: uzun vadede dogru sonum + dogru denge, deterministik;
+  bedel degisken basina 1 yazmac.
+- Once olcu: kompartimanlara gelen girdilerin ne kadari olu-bant icinde?
+
+DURUST SINIRLAR: yalniz pattern lob test edildi (PLIR'li duyusal lob
+degil); gurultu testi 10 tohum; esik-sinirindaki nadir kararlar (marj <%1)
+tamamen dislanamaz; gating tabanini kullanan analiz metrikleri taranmadi.
+
+Kanit: `probe_rhythm_silence.py` (T1/T2/T3), `check_lsb_deadband.cpp`
+(taban tablosu). Calistirma bu dosyalarin baslik yorumlarinda.
